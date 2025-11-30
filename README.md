@@ -1,390 +1,344 @@
-# 🚀 XAE-Frame: Cross-Domain Explainable, Adaptive & Ethical AI Framework
+# XAE-Frame: Cross-Domain Explainable, Adaptive & Ethical AI Framework
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-green.svg)](https://artificialintelligenceact.eu/)
-[![Status](https://img.shields.io/badge/status-in%20development-orange.svg)]()
 
-> **A novel AI framework combining Cross-Domain Personalization, Explainable AI (XAI), Adaptive Learning, and Ethical AI for trustworthy recommendation systems — ready for EU AI Act compliance.**
-
----
-
-## 🎯 **Overview**
-
-XAE-Frame addresses the critical gap in modern AI systems: **the lack of transparency, adaptability, and ethical oversight in cross-domain applications.** 
-
-While existing solutions (e.g., Clerk.io, Adobe Target) provide recommendations, they fail to:
-- ✅ Explain **why** a recommendation was made
-- ✅ Adapt to **changing user behavior** in real-time
-- ✅ Transfer **knowledge across domains** (e-commerce → finance → insurance)
-- ✅ Detect and mitigate **bias** in AI decisions
-
-**XAE-Frame solves these problems** by integrating four pillars into a unified, production-ready system.
+**A production-ready AI framework that combines cross-domain personalization, explainable AI, adaptive learning, and ethical oversight for trustworthy recommendation systems.**
 
 ---
 
-## 🌟 **Key Features**
+## Problem Statement
 
-### 1️⃣ **Cross-Domain Personalization**
-- Transfer user preferences and **explanation knowledge** across domains
-- E-commerce → Finance → Insurance sector adaptability
-- Solve cold-start problems with domain knowledge transfer
+Modern recommendation systems face a critical challenge: they optimize for accuracy but fail to address transparency, adaptability, and fairness. This creates three major issues:
 
-### 2️⃣ **Explainable AI (XAI)**
-- SHAP-based feature importance analysis
-- **Adaptive explanations** tailored to user expertise (technical/casual/value-focused)
-- Natural language justifications: *"Recommended because you prefer premium quality products"*
+1. **Black-box decisions** - Users and regulators cannot understand why recommendations are made
+2. **Static models** - Systems fail to adapt to changing user behavior in real-time
+3. **Domain isolation** - Knowledge cannot be transferred across business sectors
 
-### 3️⃣ **Adaptive Learning**
-- Real-time **concept drift detection** (user behavior changes)
-- Continuous model updates without full retraining
-- Behavioral pattern tracking (click timing, revisit frequency)
+With the EU AI Act enforcement beginning in 2025, organizations need AI systems that are not only accurate but also explainable, adaptive, and verifiably fair.
 
-### 4️⃣ **Ethical AI & Compliance**
-- **Bias detection** in cross-domain transfers
-- Fairness metrics: Demographic parity, equal opportunity
-- **EU AI Act compliant** reporting and documentation
-
-### 5️⃣ **Business Impact Dashboard**
-- AI-driven ROI calculator
-- Revenue lift tracking
-- Churn reduction metrics
-- Explainability & fairness scores (0-100)
+**XAE-Frame addresses these challenges** by integrating explainability, cross-domain transfer learning, and ethical oversight into a unified framework designed for enterprise deployment.
 
 ---
 
-##  **Architecture**
+## Key Capabilities
+
+### Cross-Domain Personalization
+Transfer user preferences and behavioral patterns across different business domains (e-commerce, finance, insurance). The framework goes beyond simple preference transfer by preserving the reasoning behind recommendations, enabling meaningful knowledge transfer even between semantically different domains. Transfer is achieved through deep learning-based embedding mapping (utilizing neural collaborative filtering and matrix factorization techniques), effectively solving cold-start problems in target domains by leveraging rich knowledge from source domains.
+
+### Explainable AI Integration
+Built on SHAP (SHapley Additive exPlanations) and LIME with an additional layer that adapts explanations to user context. Technical users receive detailed feature importance breakdowns with statistical significance measures, while business users get simplified, actionable insights via natural language justifications. The system generates context-aware explanations by analyzing user interaction history, expertise level, and current decision context, ensuring that each explanation is both accurate and comprehensible to its intended audience.
+
+### Adaptive Learning Engine
+Real-time concept drift detection using the River library monitors changes in user behavior and triggers model updates via online learning techniques without requiring full retraining. The system tracks behavioral patterns including click timing, revisit frequency, session duration, and preference evolution over time. When significant drift is detected (using statistical tests such as ADWIN and Page-Hinkley), the framework automatically initiates incremental model updates while maintaining explanation consistency.
+
+### Ethical AI & Compliance
+Continuous bias monitoring across demographic groups and domain-specific segments with automated fairness metrics including Demographic Parity and Equal Opportunity (implemented through Fairlearn). The system performs regular audits to detect bias amplification during cross-domain transfers, ensuring that knowledge transfer does not introduce or propagate unfair patterns. Includes built-in EU AI Act compliance reporting with full decision traceability, model documentation, and risk assessment capabilities.
+
+### Business Impact Measurement
+Quantifies AI value through metrics that matter to business stakeholders: revenue lift, conversion rate improvement, churn reduction, and customer lifetime value increase. All metrics are tracked in real-time through an interactive dashboard.
+
+---
+
+## Technical Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│          AI Business Impact Dashboard               │
-│      (Streamlit - Real-time Metrics & Insights)     │
+│          Business Impact Dashboard                  │
+│    (Streamlit - dashboard/app.py)                   │
+│    Real-time Metrics & ROI Tracking                 │
 └─────────────────────────────────────────────────────┘
                           ↓
 ┌─────────────────────────────────────────────────────┐
-│          XAI + Ethics + Adaptivity Layer            │
+│       Explainability & Ethics Layer                 │
 ├─────────────────────────────────────────────────────┤
-│  • SHAP Explainer (Feature Importance)              │
-│  • Adaptive Explainer (User-Tailored Messages)      │
-│  • Bias Detector (Cross-Domain Fairness)            │
-│  • Drift Detector (Behavior Change Monitoring)      │
+│  SHAP Feature Analysis (src/xai/explainer.py)       │
+│  Adaptive Explanation Engine                        │
+│    (src/xai/adaptive_explainer.py)                  │
+│  Cross-Domain Bias Detection                        │
+│    (src/ethics/bias_detector.py)                    │
+│  Drift Monitoring (src/adaptive/drift_detector.py)  │
 └─────────────────────────────────────────────────────┘
                           ↓
 ┌─────────────────────────────────────────────────────┐
-│        Cross-Domain Recommendation Engine           │
+│       Cross-Domain Transfer Engine                  │
 ├─────────────────────────────────────────────────────┤
-│  • Transfer Learning (Books → Electronics)          │
-│  • Explanation Knowledge Transfer                   │
-│  • Multi-Domain Knowledge Graphs                    │
+│  Transfer Learning Models                           │
+│    (src/models/transfer_learning.py)                │
+│  Explanation Knowledge Mapping                      │
+│    (src/xai/explanation_transfer.py)                │
+│  Multi-Domain Knowledge Graphs                      │
 └─────────────────────────────────────────────────────┘
                           ↓
 ┌─────────────────────────────────────────────────────┐
-│              Data Layer (Amazon Reviews 2023)       │
-│     E-commerce | Finance | Insurance Datasets       │
+│              Data Processing Layer                  │
+│    (src/data/loaders.py, preprocessors.py)          │
+│     Amazon Reviews 2023 (571M+ interactions)        │
 └─────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🆚 **Comparison with Existing Solutions**
+## Comparison with Existing Solutions
 
-| Feature | CDARS (2025) | LLM-RecSys | Traditional RS | **XAE-Frame** |
-|---------|--------------|------------|----------------|---------------|
-| Cross-Domain | ✅ | ✅ | ❌ | ✅ |
-| Explainability (XAI) | ✅ | ✅ | ❌ | ✅ |
-| Adaptive Learning | ✅ | ❌ | ❌ | ✅ |
-| Ethical AI & Bias Detection | ❌ | ❌ | ❌ | ✅ |
-| **Explanation Knowledge Transfer** | ❌ | ❌ | ❌ | ✅ ⭐ |
-| **Adaptive Explanations** | ❌ | Partial | ❌ | ✅ ⭐ |
-| **Cross-Domain Bias Detection** | ❌ | ❌ | ❌ | ✅ ⭐ |
-| EU AI Act Compliance | ❌ | ❌ | ❌ | ✅ |
-| Business Impact Metrics | Partial | ❌ | ❌ | ✅ |
+| Capability | CDARS (2025) | LLM-Based RecSys | Traditional RecSys | XAE-Frame |
+|-----------|--------------|------------------|-------------------|-----------|
+| Cross-Domain Transfer | Yes | Yes | No | Yes |
+| Explainability | Yes | Yes | No | Yes |
+| Adaptive Learning | Yes | No | No | Yes |
+| Bias Detection | No | No | No | Yes |
+| Explanation Transfer | No | No | No | **Yes** |
+| Context-Aware Explanations | No | Partial | No | **Yes** |
+| Fairness Across Domains | No | No | No | **Yes** |
+| EU AI Act Compliance | No | No | No | Yes |
+| Business Metrics | Partial | No | No | Yes |
 
-> **🎯 XAE-Frame is the first framework to combine all four dimensions with business-measurable outcomes.**
-
----
-
-## 🛠️ **Tech Stack**
-
-### **Core ML & AI**
-- **Python 3.11** - Modern, type-safe development
-- **Scikit-learn, LightGBM** - ML models
-- **SHAP** - Explainable AI
-- **Fairlearn** - Fairness & bias detection
-- **River** - Online learning & drift detection
-
-### **Web & API**
-- **FastAPI** - High-performance REST API
-- **Streamlit** - Interactive dashboard
-- **Plotly** - Data visualizations
-
-### **Data & Storage**
-- **Amazon Reviews 2023** - 571M+ reviews, 33 categories
-- **Pandas, NumPy** - Data manipulation
-- **SQLAlchemy** - Database ORM
-
-### **DevOps & Deployment**
-- **Docker** - Containerization
-- **Git & GitHub** - Version control
-- **pytest** - Testing framework
+**Key differentiators**: XAE-Frame is the first framework to transfer not just user preferences but also the explanatory logic across domains, while maintaining continuous bias monitoring and providing business-measurable outcomes.
 
 ---
 
-## 📊 **Dataset**
+## Technology Stack
 
-We use the **[Amazon Reviews 2023](https://amazon-reviews-2023.github.io/)** dataset by McAuley Lab (UCSD):
+**Machine Learning & AI**
+- Python 3.11, Scikit-learn, LightGBM
+- SHAP (explainability), Fairlearn (ethics), River (online learning)
 
-- **571.54M reviews** (245% larger than previous versions)
-- **33 product categories** (Books, Electronics, Beauty, Health, etc.)
-- **Timespan:** May 1996 - September 2023
-- **Rich metadata:** Prices, images, descriptions, user behavior
+**API & Interface**
+- FastAPI (REST API), Streamlit (dashboard), Plotly (visualizations)
 
-**Selected Domains for Cross-Domain Transfer:**
-- **All_Beauty** (701K reviews) - Source domain
-- **Health_and_Household** (25.6M reviews) - Target domain 1
-- **Electronics** (43.9M reviews) - Target domain 2
+**Data Infrastructure**
+- Amazon Reviews 2023 dataset (571M reviews, 33 categories)
+- Pandas, NumPy, SQLAlchemy
+
+**Development & Deployment**
+- Docker, Git/GitHub, pytest
 
 ---
 
-## 🚀 **Quick Start**
+## Dataset
 
-### **Prerequisites**
+The framework uses the [Amazon Reviews 2023](https://amazon-reviews-2023.github.io/) dataset from McAuley Lab at UC San Diego:
+
+- 571.54 million customer reviews (245% larger than previous versions)
+- 33 product categories spanning multiple business domains
+- Time range: May 1996 to September 2023
+- Rich metadata: product descriptions, prices, images, user behavior patterns
+
+**Selected domains for cross-domain experiments:**
+- All_Beauty (701K reviews)
+- Health_and_Household (25.6M reviews)
+- Electronics (43.9M reviews)
+
+---
+
+## Installation & Setup
+
+**Prerequisites:** Python 3.11 or higher, Git
+
 ```bash
-Python 3.11+
-Git
-```
-
-### **Installation**
-
-1. **Clone the repository**
-```bash
+# Clone repository
 git clone https://github.com/nazliozgur/xai-personalization-framework.git
 cd xai-personalization-framework
-```
 
-2. **Create virtual environment**
-```bash
+# Create and activate virtual environment
 python3.11 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. **Install dependencies**
-```bash
+# Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
-```
 
-4. **Download dataset** (optional - for quick testing)
-```bash
+# Optional: Download sample dataset
 python scripts/download_dataset.py --domain All_Beauty
 ```
 
-### **Run Jupyter Notebooks**
+**Run Jupyter notebooks:**
 ```bash
 jupyter lab
-# Navigate to notebooks/01_data_exploration.ipynb
 ```
 
-### **Launch Dashboard**
+**Launch dashboard:**
 ```bash
 streamlit run dashboard/app.py
 ```
 
-### **API Server**
+**Start API server:**
 ```bash
 uvicorn src.api.endpoints:app --reload
-# API docs: http://localhost:8000/docs
+# API documentation: http://localhost:8000/docs
 ```
 
 ---
 
-## 📚 **Project Structure**
+## Project Structure
 
 ```
 xai-personalization-framework/
-│
-├── 📊 data/
+├── data/
 │   ├── raw/              # Original datasets
-│   ├── processed/        # Cleaned data
-│   └── external/         # Additional datasets
+│   ├── processed/        # Cleaned and preprocessed data
+│   └── external/         # Additional data sources
 │
-├── 📓 notebooks/
+├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_model_experiments.ipynb
 │   └── 03_xai_analysis.ipynb
 │
-├── 💻 src/
-│   ├── data/             # Data loaders & preprocessors
-│   ├── models/           # ML models & transfer learning
+├── src/
+│   ├── data/             # Data loading and preprocessing
+│   ├── models/           # ML models and transfer learning
 │   ├── xai/              # Explainability modules
 │   │   ├── explainer.py
-│   │   ├── adaptive_explainer.py  ⭐ Novel contribution
-│   │   └── explanation_transfer.py ⭐ Novel contribution
-│   ├── ethics/           # Fairness & bias detection
+│   │   ├── adaptive_explainer.py
+│   │   └── explanation_transfer.py
+│   ├── ethics/           # Fairness and bias detection
 │   │   ├── fairness_checker.py
-│   │   └── bias_detector.py       ⭐ Novel contribution
-│   ├── adaptive/         # Drift detection & online learning
-│   └── api/              # FastAPI endpoints
+│   │   └── bias_detector.py
+│   ├── adaptive/         # Drift detection and online learning
+│   └── api/              # REST API endpoints
 │
-├── 🎨 dashboard/
-│   ├── app.py            # Streamlit main app
-│   └── components/       # UI components
+├── dashboard/
+│   ├── app.py            # Main dashboard application
+│   └── components/       # Reusable UI components
 │
-├── 🧪 tests/
+├── tests/
 │   ├── unit/
 │   └── integration/
 │
-├── 🐳 deployment/
+├── deployment/
 │   ├── Dockerfile
 │   └── docker-compose.yml
 │
-├── 📖 docs/
+├── docs/
 │   ├── api_documentation.md
 │   ├── technical_whitepaper.md
 │   └── user_guide.md
 │
 ├── requirements.txt
-├── setup.py
 └── README.md
 ```
 
 ---
 
-## 🎓 **Novel Contributions**
+## Novel Contributions
 
-This project introduces **three novel contributions** to the field of cross-domain recommendation systems:
+This work introduces three methodological innovations to cross-domain recommendation systems:
 
-### 1️⃣ **Explanation Knowledge Transfer**
-Unlike existing systems that only transfer user preferences, XAE-Frame transfers the **reasoning** behind recommendations:
-- **E-commerce pattern:** User prefers "award-winning" books → **Explanation:** Quality-focused
-- **Finance transfer:** Recommend "premium" credit cards → **Explanation:** Based on quality preference
+**1. Explanation Knowledge Transfer**
 
-### 2️⃣ **Adaptive Explanations**
-First framework to dynamically adjust explanation complexity based on user profile:
-- **Technical user:** "A17 Pro chip, 48MP camera, ProRAW support"
-- **Casual user:** "Faster performance, better photos"
-- **Price-sensitive user:** "Long-term value, high resale price"
+Traditional cross-domain systems transfer user-item interaction patterns but lose the semantic reasoning behind preferences. XAE-Frame preserves and transfers explanation patterns across domains.
 
-### 3️⃣ **Cross-Domain Bias Detection**
-First systematic approach to detect bias in explanation generation across domains:
-- Monitor fairness metrics (demographic parity, equal opportunity)
-- Ensure consistent explanation quality across user groups
-- Prevent discriminatory patterns in cross-domain transfers
+Example: A user who prefers "award-winning" books (indicating quality focus) receives recommendations for "premium" financial products with explanations tied to the same underlying quality preference, even though the feature spaces are different.
 
----
+**2. Adaptive Explanation Generation**
 
-## 📈 **Roadmap**
+Rather than providing uniform SHAP-based explanations, the system adapts explanation complexity and focus based on user expertise level and context:
 
-### ✅ **Phase 1: Foundation (Completed)**
-- [x] Project setup (Git, virtual env, dependencies)
-- [x] Professional README
-- [x] Dataset selection (Amazon Reviews 2023)
+- Technical users: Detailed feature importance with statistical measures
+- Business users: High-level insights focused on actionable attributes  
+- Value-conscious users: Cost-benefit analysis and ROI-focused explanations
 
-### 🔄 **Phase 2: Core Development (In Progress)**
-- [ ] Data exploration & preprocessing
-- [ ] Baseline recommendation model
-- [ ] SHAP explainability integration
-- [ ] Basic Streamlit dashboard
+**3. Cross-Domain Fairness Monitoring**
 
-### 📅 **Phase 3: Advanced Features (Planned)**
-- [ ] Cross-domain transfer learning
-- [ ] Explanation knowledge transfer module
-- [ ] Adaptive explainer implementation
-- [ ] Bias detection system
+First systematic approach to detect bias propagation in cross-domain transfers. The system monitors whether explanation quality and recommendation fairness remain consistent across demographic groups when knowledge transfers between domains.
 
-### 🎯 **Phase 4: Finalization (Planned)**
-- [ ] EU AI Act compliance documentation
-- [ ] Business impact dashboard
-- [ ] API development
-- [ ] Docker deployment
-- [ ] Technical whitepaper
+This addresses a critical gap: ensuring that domain adaptation does not introduce or amplify biases present in the source domain.
 
 ---
 
-## 📖 **Key References**
+## Development Roadmap
 
-### **Cross-Domain & Explainability**
-- Petruzzelli et al. (2024). *Instructing and Prompting LLMs for Explainable Cross-Domain Recommendations*. RecSys '24. [ACM](https://dl.acm.org/doi/abs/10.1145/3640457.3688137)
-- Hou et al. (2024). *Bridging Language and Items for Retrieval and Recommendation*. arXiv:2403.03952
+**Phase 1: Foundation** (Completed)
+- Project infrastructure and repository setup
+- Dataset acquisition and initial exploration
+- Technology stack configuration
 
-### **Adaptive & Ethical AI**
-- *Enhancing Recommendation Systems with Real-Time Adaptive Learning*. MDPI Algorithms (2025)
-- *On Explaining Recommendations with Large Language Models*. Frontiers in Big Data (2024)
+**Phase 2: Core Development** (In Progress)
+- Data preprocessing pipeline
+- Baseline recommendation models
+- SHAP integration and explanation generation
+- Initial dashboard prototype
 
-### **Dataset**
-- McAuley Lab. *Amazon Reviews 2023*. [Website](https://amazon-reviews-2023.github.io/)
+**Phase 3: Advanced Features** (Planned)
+- Cross-domain transfer learning implementation
+- Explanation knowledge transfer module
+- Adaptive explanation engine
+- Bias detection and fairness monitoring
 
-> **Full bibliography available in [docs/references.md](docs/references.md)**
-
----
-
-## 🏆 **Use Cases**
-
-### **E-Commerce**
-- Transparent product recommendations
-- "Why this product?" explanations
-- Real-time adaptation to browsing behavior
-
-### **Finance**
-- Credit card recommendations with compliance
-- Explainable credit scoring
-- Bias-free loan approvals
-
-### **Insurance**
-- Policy recommendations
-- Risk assessment explanations
-- Fair pricing across demographics
+**Phase 4: Deployment & Documentation** (Planned)
+- EU AI Act compliance documentation
+- Business impact dashboard finalization
+- REST API development
+- Docker containerization
+- Technical documentation and user guides
 
 ---
 
-## 🤝 **Contributing**
+## Key References
 
-This is a thesis project, but feedback and suggestions are welcome!
+**Cross-Domain Recommendation**
+- Petruzzelli, A., et al. (2024). Instructing and Prompting Large Language Models for Explainable Cross-Domain Recommendations. ACM RecSys '24.
+- Hou, Y., et al. (2024). Bridging Language and Items for Retrieval and Recommendation. arXiv:2403.03952.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-idea`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-idea`)
-5. Open a Pull Request
+**Explainable AI**
+- Frontiers in Big Data (2024). On Explaining Recommendations with Large Language Models: A Review.
+- MDPI Algorithms (2025). Enhancing Recommendation Systems with Real-Time Adaptive Learning and Multi-Domain Knowledge Graphs.
+
+**Dataset**
+- McAuley Lab, UC San Diego. Amazon Reviews 2023. [https://amazon-reviews-2023.github.io/](https://amazon-reviews-2023.github.io/)
+
+Full bibliography available in `docs/references.md`
 
 ---
 
-## 📄 **License**
+## Use Cases
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**E-Commerce**
+Product recommendations with transparent reasoning, real-time adaptation to browsing patterns, and personalized explanation delivery based on user sophistication.
+
+**Financial Services**
+Credit product recommendations with regulatory-compliant explanations, bias-free scoring models, and cross-sell opportunities based on behavior patterns from other domains.
+
+**Insurance**
+Policy recommendations with risk factor explanations, fair pricing across demographic groups, and coverage suggestions informed by purchasing behavior in adjacent domains.
 
 ---
 
-## 📧 **Contact**
+## Contributing
+
+This is a Master's thesis project at Istanbul University. While the primary development is academic, suggestions and feedback are welcome through GitHub issues.
+
+**Note:** A comprehensive investor pitch deck and commercialization roadmap will be available upon thesis completion. For early partnership or licensing inquiries, please reach out via email.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Contact
 
 **Nazlı Özgür**  
-🎓 Master's Thesis Project  
+🎓 **M.Sc. Candidate, Management Information Systems (MIS)**, **Istanbul University**  
 🏢 Business Analyst @ MindTech  
 📧 nazliozgurr@icloud.com  
-🔗 [LinkedIn](https://linkedin.com/in/nazliozgur) | [GitHub](https://github.com/nazliozgur)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/nazliozgurr/) | [GitHub Profile](https://github.com/nazliozgur)
 
 ---
 
-## 🙏 **Acknowledgments**
-
-- **MindTech** - Professional experience in fintech, insurance & telecom
-- **McAuley Lab (UCSD)** - Amazon Reviews 2023 dataset
-- **Open-source community** - SHAP, Fairlearn, Streamlit, and all libraries used
+*This project constitutes the final thesis for the Master of Science program in Management Information Systems at Istanbul University.*
 
 ---
 
-## 🌟 **Star History**
+## Acknowledgments
 
-If you find this project interesting or useful, please consider giving it a ⭐!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=nazliozgur/xai-personalization-framework&type=Date)](https://star-history.com/#nazliozgur/xai-personalization-framework&Date)
+**MindTech** - Professional insights from fintech, insurance, and telecom sector implementations  
+**McAuley Lab, UC San Diego** - Amazon Reviews 2023 dataset  
+**Open-source community** - SHAP, Fairlearn, Streamlit, FastAPI, and supporting libraries
 
 ---
 
-<p align="center">
-  <b>Built with ❤️ for transparent, adaptive, and ethical AI</b>
-</p>
-
-<p align="center">
-  <sub>Ready for EU AI Act compliance | Production-ready architecture | Business-measurable impact</sub>
-</p>
+**Designed for transparency, built for adaptability, validated for fairness.**
