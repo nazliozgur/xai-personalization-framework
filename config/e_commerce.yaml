@@ -1,0 +1,247 @@
+# XAE-Frame Configuration - E-Commerce Domain
+# Amazon Reviews 2023 Dataset
+
+# DATASET CONFIGURATION
+dataset:
+  name: "amazon_reviews_2023"
+  category: "All_Beauty"  # Options: All_Beauty, Electronics, Books, etc.
+  source: "huggingface"
+  hf_dataset: "McAuley-Lab/Amazon-Reviews-2023"
+  
+  # Data paths
+  raw_data_path: "data/raw/amazon_reviews_All_Beauty.parquet"
+  processed_data_path: "data/processed/amazon_reviews_All_Beauty_processed.parquet"
+  metadata_path: "data/raw/amazon_metadata_All_Beauty.parquet"
+  
+  # Sampling (set to null for full dataset)
+  sample_size: 10000  # Use 10k for quick prototyping, null for production
+  random_seed: 42
+  
+  # Train/validation/test split
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+# FEATURE ENGINEERING
+features:
+  # User features
+  user_features:
+    - "user_id"
+    - "user_review_count"
+    - "user_avg_rating"
+    - "user_activity_days"
+  
+  # Item features
+  item_features:
+    - "item_id"
+    - "item_category"
+    - "item_price"
+    - "item_avg_rating"
+    - "item_review_count"
+  
+  # Interaction features
+  interaction_features:
+    - "rating"
+    - "timestamp"
+    - "verified_purchase"
+    - "helpful_votes"
+  
+  # Text features
+  text_features:
+    enabled: true
+    review_text: "review_text"
+    vectorization: "tfidf"  # Options: tfidf, word2vec, bert
+    max_features: 5000
+    min_df: 2
+    max_df: 0.95
+
+# MODEL CONFIGURATION
+model:
+  type: "lightgbm"  # Options: lightgbm, xgboost, catboost
+  
+  # LightGBM hyperparameters
+  lightgbm:
+    objective: "regression"
+    metric: "rmse"
+    boosting_type: "gbdt"
+    num_leaves: 31
+    learning_rate: 0.05
+    n_estimators: 100
+    max_depth: -1
+    min_child_samples: 20
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.0
+    reg_lambda: 0.0
+    random_state: 42
+    n_jobs: -1
+    verbose: -1
+  
+  # Model paths
+  model_save_path: "data/models/lightgbm_e_commerce.pkl"
+  mlflow_experiment: "xae-frame-e-commerce"
+
+# EXPLAINABILITY (XAI) CONFIGURATION
+explainability:
+  enabled: true
+  engine: "shap"  # Options: shap, lime
+  
+  # SHAP configuration
+  shap:
+    explainer_type: "tree"  # Options: tree, kernel, deep, linear
+    sample_size: 100  # Number of samples for background dataset
+    cache_enabled: true
+    cache_ttl: 3600  # seconds
+  
+  # Explanation types (NIST categories)
+  explanation_types:
+    - "user_benefit"          # Simple why
+    - "societal_acceptance"   # Trust building
+    - "regulatory_compliance" # Audit trails
+    - "system_development"    # Debugging
+    - "owner_benefit"         # Business value
+  
+  # Knowledge limits
+  confidence_thresholds:
+    high: 0.90
+    medium: 0.70
+    low: 0.50
+  
+  # Out-of-distribution detection
+  ood_detection:
+    enabled: true
+    method: "alibi_detect"
+    threshold: 0.05
+
+# ADAPTIVE LEARNING CONFIGURATION
+adaptive:
+  enabled: true
+  
+  # Drift detection
+  drift_detection:
+    enabled: true
+    method: "alibi_detect"  # Kolmogorov-Smirnov test
+    check_interval_hours: 24
+    drift_threshold: 0.05
+    window_size: 1000  # Number of recent samples to check
+  
+  # Automated retraining
+  retraining:
+    enabled: true
+    strategy: "performance_based"  # Options: performance_based, time_based, hybrid
+    
+    # Performance-based triggers
+    performance_threshold: 0.80  # Retrain if accuracy drops below this
+    metric: "rmse"
+    
+    # Time-based triggers
+    max_model_age_days: 30
+    
+    # Retraining data
+    data_window_days: 90
+    incremental: false  # Set to true for online learning
+  
+  # Feedback loop
+  feedback_loop:
+    enabled: true
+    interaction_types:
+      - "click"
+      - "purchase"
+      - "return"
+      - "rating"
+    weight_recent: true
+    decay_factor: 0.95
+
+# ETHICAL AI CONFIGURATION
+ethical:
+  enabled: true
+  
+  # Fairness monitoring
+  fairness:
+    enabled: true
+    library: "fairlearn"  # Options: fairlearn, aif360
+    
+    # Protected attributes (adjust based on available data)
+    protected_attributes:
+      - "user_age_group"  # If available
+      - "user_gender"     # If available
+    
+    # Fairness metrics
+    metrics:
+      - "demographic_parity"
+      - "equal_opportunity"
+      - "disparate_impact"
+    
+    # Thresholds
+    fairness_threshold: 0.80
+    
+  # Bias mitigation
+  bias_mitigation:
+    enabled: true
+    strategy: "postprocessing"  # Options: preprocessing, inprocessing, postprocessing
+  
+  # EU AI Act compliance
+  compliance:
+    enabled: true
+    report_schedule: "weekly"  # Options: daily, weekly, monthly
+    audit_log_enabled: true
+
+# BUSINESS IMPACT CONFIGURATION
+
+business_impact:
+  enabled: true
+  
+  # A/B testing
+  ab_testing:
+    enabled: true
+    control_group_percentage: 0.20
+  
+  # Metric tracking
+  metrics:
+    - "conversion_rate"
+    - "churn_rate"
+    - "revenue_impact"
+    - "customer_satisfaction"
+  
+  # Real-time collection
+  real_time:
+    enabled: true
+    collection_endpoint: "/api/events"
+    batch_size: 100
+
+# API CONFIGURATION
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true  # Set to false in production
+  workers: 4
+  
+  # CORS
+  cors:
+    enabled: true
+    allowed_origins:
+      - "http://localhost:3000"
+      - "http://localhost:8501"
+    allowed_methods: ["GET", "POST", "PUT", "DELETE"]
+    allowed_headers: ["*"]
+
+# DASHBOARD CONFIGURATION
+dashboard:
+  title: "XAE-Frame Dashboard - E-Commerce"
+  port: 8501
+  theme: "light"  # Options: light, dark
+  
+  # Views
+  views:
+    - "executive"
+    - "data_science"
+    - "compliance"
+    - "end_user"
+
+# LOGGING
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "json"  # Options: json, text
+  file: "logs/xae_frame_e_commerce.log"
+  rotation: "1 day"
+  retention: "30 days"
