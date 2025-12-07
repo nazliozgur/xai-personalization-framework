@@ -1,0 +1,47 @@
+# XAE-Frame Development Requirements
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+
+# BASE REQUIREMENTS
+-r requirements.txt
+
+# DEVELOPMENT TOOLS
+ipython>=8.16.0,<9.0.0
+jupyter-contrib-nbextensions>=0.7.0
+jupyterlab>=4.0.0,<5.0.0
+
+# DEBUGGING
+ipdb>=0.13.13
+pdbpp>=0.10.3
+debugpy>=1.8.0  # VS Code debugging
+
+# TESTING EXTRAS
+pytest-xdist>=3.3.0  # Parallel test execution
+pytest-mock>=3.11.0
+pytest-benchmark>=4.0.0
+faker>=20.0.0  # Generate fake data for tests
+
+# CODE QUALITY EXTRAS
+pre-commit>=3.5.0  # Git hooks for code quality
+coverage>=7.3.0
+bandit>=1.7.0  # Security vulnerability scanner
+radon>=6.0.1  # Code complexity metrics
+vulture>=2.9.1  # Find dead code
+
+# DOCUMENTATION EXTRAS
+sphinx>=7.2.0  # Alternative to mkdocs
+sphinx-rtd-theme>=1.3.0
+pdoc>=14.1.0  # Simple API docs
+
+# PROFILING & PERFORMANCE
+memory-profiler>=0.61.0
+line-profiler>=4.1.0
+py-spy>=0.3.14  # Sampling profiler
+
+# DATA EXPLORATION
+pandas-profiling>=3.6.0  # Automated EDA
+sweetviz>=2.3.0  # Alternative EDA tool
+dtale>=3.8.0  # Interactive data exploration
+
+# EXPERIMENT TRACKING EXTRAS
+tensorboard>=2.15.0  # For MLflow/TensorFlow logging
+wandb>=0.16.0  # Weights & Biases (optional alternative to MLflow)
