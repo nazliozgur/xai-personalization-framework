@@ -1,4 +1,6 @@
 # XAE-Frame .gitignore
+# Explainable, Adaptive & Ethical AI Framework
+# Updated: December 2024
 
 # PYTHON
 # Byte-compiled / optimized / DLL files
@@ -53,9 +55,9 @@ coverage.xml
 .pytest_cache/
 test-results/
 
-# Jupyter Notebook
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints
-*.ipynb
+# Notebooks themselves (.ipynb) are not ignored!
 
 # IPython
 profile_default/
@@ -85,6 +87,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env.local
+.env.*.local
+.env.production
 
 # Spyder project settings
 .spyderproject
@@ -105,18 +110,38 @@ dmypy.json
 .pyre/
 
 # DATA & MODELS
-# Large data files
+
+# Raw data (too large for git)
 data/raw/*
-data/processed/*
-data/external/*
-data/interim/*
-!data/.gitkeep
 !data/raw/.gitkeep
+data/raw/**/*.parquet
+data/raw/**/*.csv
+data/raw/**/*.json
+data/raw/**/*.txt
+data/raw/**/*.zip
+data/raw/**/*.gz
+data/raw/**/*.tar
+
+# Processed data (regenerate-able)
+data/processed/*
 !data/processed/.gitkeep
+data/processed/**/*.parquet
+data/processed/**/*.csv
+data/processed/**/*.pkl
+data/processed/**/*.joblib
+data/processed/eda_summary.json
+
+# External & interim data
+data/external/*
+!data/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
 
 # Model artifacts
 models/*
 !models/.gitkeep
+data/models/*
+!data/models/.gitkeep
 *.pkl
 *.pickle
 *.joblib
@@ -126,22 +151,33 @@ models/*
 *.ckpt
 *.safetensors
 
-# MLflow
+# MLflow artifacts
 mlruns/
 mlflow/
 mlartifacts/
+mlflow-artifacts/
 
 # LOGS & OUTPUTS
+
+# Logs
 logs/
 *.log
 *.out
 *.err
+*.log.*
 
 # Tensorboard
 runs/
 events.out.tfevents.*
 
+# Experiment results
+experiments/
+results/
+outputs/
+
 # DATABASES
+
+# SQLite
 *.db
 *.sqlite
 *.sqlite3
@@ -151,11 +187,14 @@ events.out.tfevents.*
 postgres_data/
 
 # DOCKER & CONTAINERS
+
 # Docker volumes
 .docker/
 docker-compose.override.yml
+docker-volumes/
 
 # IDE & EDITORS
+
 # VS Code
 .vscode/
 !.vscode/settings.json
@@ -187,7 +226,8 @@ docker-compose.override.yml
 /.emacs.desktop.lock
 *.elc
 
-# OS
+# OPERATING SYSTEMS
+
 # macOS
 .DS_Store
 .AppleDouble
@@ -204,13 +244,9 @@ ehthumbs_vista.db
 $RECYCLE.BIN/
 *.lnk
 
-# Linux
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
 
 # TEMPORARY FILES
+
 *.tmp
 *.temp
 *.bak
@@ -219,18 +255,53 @@ $RECYCLE.BIN/
 tmp/
 temp/
 
-# DOCUMENTATION
+# DOCUMENTATION (SELECTIVE)
+
 # Sphinx documentation
 docs/_build/
 docs/_static/
 docs/_templates/
 
+# Auto-generated figures (regenerate-able from notebooks)
+docs/figures/*.png
+docs/figures/*.svg
+docs/figures/*.pdf
+docs/figures/*.jpg
+
+# Keep architecture diagrams (manually created)
+!docs/figures/architecture_diagram.png
+!docs/figures/example_*.png
+
+# Temporary working files (IMPORTANT FOR XAE-FRAME)
+SECTION_*.py
+*_CELLS.py
+*_DRAFT.md
+*_OLD.md
+*_v1.*
+*_v2.*
+*_backup.*
+*_temp.*
+*_test.*
+
+# Personal notes
+NOTES.md
+TODO_PERSONAL.md
+SCRATCH.md
+EDA_EKLEMELER.md
+
+# Draft notebooks (keep only final versions)
+*_draft.ipynb
+*_test.ipynb
+*_scratch.ipynb
+
+# Old/superseded scripts
+*_fixed.py
+*_old.py
+
+# EDA intermediates
+01_eda_FULL_part1.json
+
 # SECRETS & CREDENTIALS
-# Environment variables
-.env
-.env.local
-.env.*.local
-.env.production
 
 # Credentials
 *.key
@@ -245,14 +316,15 @@ id_rsa
 id_rsa.pub
 known_hosts
 
+# ============================================================================
 # CLOUD & DEPLOYMENT
+# ============================================================================
+
 # AWS
 .aws/
-*.pem
 
 # Google Cloud
 .gcloud/
-*.json
 
 # Azure
 .azure/
@@ -266,6 +338,7 @@ known_hosts
 *.kubeconfig
 
 # PACKAGE MANAGERS
+
 # npm
 node_modules/
 npm-debug.log*
@@ -273,15 +346,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# MISC
-# Archives
-*.zip
-*.tar
-*.tar.gz
-*.rar
-*.7z
+# LARGE FILES (Use Git LFS if needed)
 
-# Large files (use Git LFS instead)
+# Data formats
 *.csv
 *.tsv
 *.parquet
@@ -290,8 +357,44 @@ yarn-error.log*
 *.xlsx
 *.xls
 
-# Compiled translations
-*.mo
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# PROJECT SPECIFIC (XAE-FRAME)
+
+# Reports (may contain sensitive data)
+reports/*.pdf
+reports/*.html
+
+# Compliance documents
+compliance/audit_*.pdf
+
+# User uploads (if any)
+uploads/
+
+# SHAP cache
+.shap_cache/
+
+# Plotly cache
+.plotly_cache/
+
+# Large language model weights
+*.bin
+transformers_cache/
+
+# Conference submissions (until accepted)
+docs/papers/*_draft.pdf
+docs/papers/*_submission.pdf
+
+# Presentations (work in progress)
+docs/presentations/*_wip.pptx
+docs/presentations/*_draft.pptx
+
+# PROFILING & BENCHMARKING
 
 # Profiling
 *.prof
@@ -300,27 +403,41 @@ yarn-error.log*
 # Benchmarking
 benchmark_results/
 
-# Cache directories
+# CACHE DIRECTORIES
 .cache/
 cache/
-__pycache__/
 
-# PROJECT SPECIFIC
-# Experiment results
-experiments/
-results/
-outputs/
+# KEEP EMPTY DIRECTORIES (Use .gitkeep)
 
-# Reports
-reports/*.pdf
-reports/*.html
-
-# Compliance documents (may contain sensitive info)
-compliance/audit_*.pdf
-
-# User uploads (if any)
-uploads/
-
-# KEEP FILES
-# Use .gitkeep to preserve empty directories
 !.gitkeep
+
+# EXCEPTIONS (Keep these even if they match patterns above)
+
+# Configuration
+!.env.example
+!configs/**/*.yaml
+!configs/**/*.yml
+
+# Documentation (final versions)
+!docs/**/*.md
+!docs/methodologies/**
+!docs/references/**
+!docs/standards/**
+
+# Notebooks (final versions only)
+!notebooks/01_eda_COMPLETE_EXECUTIVE.ipynb
+!notebooks/02_*.ipynb
+!notebooks/03_*.ipynb
+!notebooks/04_*.ipynb
+!notebooks/05_*.ipynb
+
+# Sample data (tiny, for testing)
+!data/raw/sample_*.csv
+!data/raw/README.md
+
+# Test fixtures
+!tests/fixtures/**
+
+# Utilities (reusable code)
+!src/utils/publication_viz_template.py
+
