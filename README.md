@@ -1,8 +1,12 @@
-# XAE-Frame: Cross-Domain Explainable, Adaptive & Ethical AI Framework
+# XAE-Frame: Explainable, Adaptive & Ethical AI Framework for Cross-Domain Personalization
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Ready-success.svg)](https://artificialintelligenceact.eu/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![NIST Compliant](https://img.shields.io/badge/NIST-Compliant-green.svg)](https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence)
+[![EU AI Act Ready](https://img.shields.io/badge/EU%20AI%20Act-Ready-blue.svg)](https://artificialintelligenceact.eu/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
 
 **A production-ready AI framework that combines cross-domain personalization, explainable AI, adaptive learning, and ethical oversight for trustworthy recommendation systems.**
 
