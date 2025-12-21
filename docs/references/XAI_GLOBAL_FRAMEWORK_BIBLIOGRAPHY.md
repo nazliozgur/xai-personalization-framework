@@ -128,21 +128,51 @@
 - **New Standard:** AI governance & risk management
 - **Use in Project:** Enterprise deployment guidelines
 
+### 16. **MODEL REPORTING & TRANSPARENCY STANDARDS**
+
+###  **Model Cards for Model Reporting**
+- **Mitchell, M., et al. (2019)** - Model Cards for Model Reporting  
+  Paper: https://arxiv.org/abs/1810.03993  
+  Published: ACM FAT* 2019 (Fairness, Accountability, and Transparency)
+  
+- **Google Research (2019)** - Model Card Toolkit  
+  GitHub: https://github.com/tensorflow/model-card-toolkit  
+  Documentation: https://modelcards.withgoogle.com
+  
+- **Hugging Face (2022)** - Model Card Guidelines  
+  Docs: https://huggingface.co/docs/hub/model-cards  
+  Template: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+
+- **IBM AI Factsheets (2020)** - Supplier's Declaration of Conformity  
+  Related to Model Cards but more comprehensive (360-degree view)
+
+**Use in Project:**
+- EU AI Act Article 13 (Technical Documentation)
+- Transparency template for each model version
+- Automated compliance report generation
+- Model registry metadata (MLflow integration)
+
+**Why Critical for XAE-Frame:**
+1. **Industry Standard**: Google, Hugging Face, OpenAI all use Model Cards
+2. **EU AI Act Alignment**: Article 13 requires technical documentation
+3. **Template Ready**: Can generate Model Cards automatically from MLflow
+4. **Thesis Defense**: "We follow Google's Model Card standard"
+
 ---
 
 ##  DOMAIN-SPECIFIC XAI
 
-### 16. **Healthcare XAI**
+### 17. **Healthcare XAI**
 - **Holzinger et al. (2019)** - Causability in Medical AI
 - **Focus:** Doctor-patient explanation needs
 - **Use in Project:** Multi-audience explanation design
 
-### 17. **Financial XAI**
+### 18. **Financial XAI**
 - **Bussmann et al. (2021)** - Explainable AI in Fintech
 - **Regulations:** MiFID II, FCRA
 - **Use in Project:** Finance domain adaptation
 
-### 18. **E-Commerce RecSys**
+### 19. **E-Commerce RecSys**
 - **Hou et al. (2024)** - Bridging Language and Items for Retrieval
   * arXiv:2403.03952
   * LLM-based recommendations
@@ -152,17 +182,17 @@
 
 ##  EDA-SPECIFIC METHODOLOGIES
 
-### 19. **Exploratory Data Analysis (Tukey, 1977)**
+### 20. **Exploratory Data Analysis (Tukey, 1977)**
 - **Classic Reference:** Exploratory Data Analysis
 - **Principles:** Visual thinking, robust statistics
 - **Use in Project:** EDA philosophy
 
-### 20. **Statistical Methods for ML (Hastie et al., 2009)**
+### 21. **Statistical Methods for ML (Hastie et al., 2009)**
 - **The Elements of Statistical Learning**
 - **Topics:** Bias-variance, cross-validation, feature selection
 - **Use in Project:** Statistical rigor in EDA
 
-### 21. **Data Quality Assessment (Batini & Scannapieco, 2016)**
+### 22. **Data Quality Assessment (Batini & Scannapieco, 2016)**
 - **Principles:** Completeness, accuracy, consistency, timeliness
 - **Use in Project:** Data trustworthiness assessment
 
@@ -170,15 +200,15 @@
 
 ##  VISUALIZATION & REPORTING
 
-### 22. **Matplotlib/Seaborn Best Practices**
+### 23. **Matplotlib/Seaborn Best Practices**
 - **Waskom (2021)** - Seaborn: Statistical data visualization
 - **Use in Project:** Publication-quality figures
 
-### 23. **Plotly for Interactive XAI**
+### 24. **Plotly for Interactive XAI**
 - **Plotly Technologies** - Dash for ML
 - **Use in Project:** Interactive dashboards
 
-### 24. **3D Visualization (Matplotlib 3D)**
+### 25. **3D Visualization (Matplotlib 3D)**
 - **Hunter (2007)** - Matplotlib: A 2D graphics environment
 - **Extension:** mplot3d for 3D scatter/surface
 - **Use in Project:** High-dimensional feature space visualization
@@ -187,11 +217,11 @@
 
 ##  BUSINESS IMPACT MEASUREMENT
 
-### 25. **A/B Testing Methodology**
+### 26. **A/B Testing Methodology**
 - **Kohavi & Longbotham (2017)** - Online Controlled Experiments
 - **Use in Project:** Business impact validation
 
-### 26. **Customer Lifetime Value (CLV)**
+### 27. **Customer Lifetime Value (CLV)**
 - **Gupta & Lehmann (2005)** - Managing Customers as Investments
 - **Use in Project:** Revenue impact estimation
 
@@ -199,19 +229,98 @@
 
 ##  THESIS-SPECIFIC CITATIONS
 
-### 27. **Cross-Domain Recommendation**
+### 28. **Cross-Domain Recommendation**
 - **Cantador et al. (2015)** - Cross-domain recommender systems
 - **Use in Project:** Transfer learning methodology
 
-### 28. **Explainable Recommendation Systems**
+### 29. **Explainable Recommendation Systems**
 - **Zhang & Chen (2020)** - Explainable Recommendation: A Survey
 - **Citation:** ACM Computing Surveys
 - **Use in Project:** Literature review
 
-### 29. **Adaptive Learning Systems**
+### 30. **Adaptive Learning Systems**
 - **Gama et al. (2014)** - A Survey on Concept Drift Adaptation
 - **Citation:** ACM Computing Surveys
 - **Use in Project:** Drift detection methodology
+
+---
+
+##  ADDITIONS v3.5
+
+### 31. **Redis for ML Feature Store**
+- **Redis Labs (2023)** - Redis as a Feature Store
+  * URL: https://redis.io/docs/manual/patterns/
+- **Feast.dev (2023)** - Feature Store Best Practices
+  * URL: https://www.featurestore.org
+- **Tecton (2022)** - Building a Feature Store
+  * Blog: Uber Engineering
+- **Use in Project:** Real-time personalization layer (<100ms latency)
+
+---
+
+### 32. **Behavior Drift Detection**
+- **Rabanser et al. (2019)** - Failing Loudly: An Empirical Study of Methods for Detecting Dataset Shift
+  * Conference: NeurIPS 2019
+- **Lu et al. (2018)** - Learning under Concept Drift: A Review
+  * Journal: IEEE TKDE
+- **Bifet & Gavaldà (2007)** - Learning from Time-Changing Data with Adaptive Windowing
+  * Conference: SIAM SDM
+- **Use in Project:** CTR/Conversion drift detection, KS-test implementation
+
+---
+
+### 33. **Champion/Challenger A/B Testing**
+- **Kohavi et al. (2020)** - Trustworthy Online Controlled Experiments: A Practical Guide
+  * Publisher: Cambridge University Press
+- **Bakshy et al. (2014)** - Designing and Deploying Online Field Experiments
+  * Conference: WWW 2014
+- **Netflix (2019)** - Experimentation Platform
+  * Tech Blog: Netflix TechBlog
+- **Use in Project:** Auto-retraining engine, model rollout strategy
+
+---
+
+### 34. **MLOps & Model Retraining**
+- **Paleyes et al. (2022)** - Challenges in Deploying Machine Learning (Cambridge)
+  * Journal: ACM Computing Surveys
+- **Sculley et al. (2015)** - Hidden Technical Debt in Machine Learning Systems (Google)
+  * Conference: NeurIPS 2015
+- **Breck et al. (2017)** - The ML Test Score (Google)
+  * Conference: NeurIPS 2017
+- **MLflow (2024)** - Model Registry & Versioning Best Practices
+  * Docs: https://mlflow.org/docs/latest/model-registry.html
+- **Use in Project:** Automated retraining pipeline, MLflow integration
+
+---
+
+### 35. **Immutable Audit Logs (Blockchain-Inspired)**
+- **Szabo (1997)** - The Idea of Smart Contracts (Blockchain foundations)
+  * Original paper
+- **Nakamoto (2008)** - Bitcoin: A Peer-to-Peer Electronic Cash System
+  * Whitepaper
+- **Hyperledger (2020)** - Blockchain for Enterprise Applications
+  * Documentation
+- **Use in Project:** Hash-chain audit trail, tamper-proof decision logs
+
+---
+
+### 36. **EU AI Act Technical Implementation**
+- **EU Commission (2024)** - AI Act Official Text
+  * URL: https://artificialintelligenceact.eu/
+- **EU AI Act (2024)** - Article 12: Logging (Technical Requirements)
+- **EU AI Act (2024)** - Article 13: Transparency & Explainability
+- **EU AI Act (2024)** - Article 15: Accuracy, Robustness, Cybersecurity
+- **ISO/IEC 23894 (2023)** - AI Risk Management
+- **Use in Project:** Regulation pack implementation, compliance reporting
+
+---
+
+### 37. **Cardinality & Feature Engineering**
+- **Micci-Barreca (2001)** - A Preprocessing Scheme for High-Cardinality Categorical Attributes
+  * Conference: SIGKDD Explorations
+- **Cerda & Varoquaux (2019)** - Encoding High-Cardinality String Categorical Variables
+  * Journal: IEEE TPAMI
+- **Use in Project:** High-cardinality feature handling (brands, categories)
 
 ---
 
@@ -285,3 +394,7 @@ confidence calibration following [Guo et al. 2017] methodology.
 As demonstrated by [McKinsey 2022], transparent AI systems achieve
 10%+ higher customer trust, directly impacting conversion rates.
 ```
+
+
+
+

@@ -6,21 +6,21 @@ numpy>=1.24.0,<2.0.0
 pandas>=2.0.0,<3.0.0
 scikit-learn>=1.3.0,<2.0.0
 scipy>=1.11.0,<2.0.0
+pyarrow>=13.0.0,<15.0.0 # Parquet support (CRITICAL for 571M rows!)
 
 # MACHINE LEARNING MODELS
 lightgbm>=4.0.0,<5.0.0
 xgboost>=2.0.0,<3.0.0
-catboost>=1.2.0,<2.0.0  # Optional: alternative gradient boosting
+catboost>=1.2.0,<2.0.0 # Optional: alternative gradient boosting
 
-# EXPLAINABILITY (XAI)
-shap>=0.43.0,<1.0.0
+# EXPLAINABILITY (XAI) & FAIRNESS
+shap>=0.43.0,<1.0.0 # SHAP explanations (NIST compliant)
 lime>=0.2.0.1  # Alternative explainer (optional)
-
-# FAIRNESS & BIAS DETECTION
-fairlearn>=0.9.0,<1.0.0
+fairlearn>=0.9.0,<1.0.0  # Bias detection & mitigation
 aif360>=0.5.0,<1.0.0  # IBM AI Fairness 360 (optional but recommended)
 
-# DRIFT DETECTION & MONITORING
+
+# ADAPTIVE LEARNING & DRIFT DETECTION
 alibi-detect>=0.12.0,<1.0.0
 evidently>=0.4.0,<1.0.0  # Alternative drift monitoring (optional)
 
@@ -32,18 +32,27 @@ cloudpickle>=2.0.0
 # API & WEB FRAMEWORK
 fastapi>=0.104.0,<1.0.0
 uvicorn[standard]>=0.24.0,<1.0.0
-pydantic>=2.4.0,<3.0.0
+pydantic[email]>=2.4.0,<3.0.0 # v3.5: Email validation for EU AI Act reports!
 pydantic-settings>=2.0.0
 python-multipart>=0.0.6  # File upload support
 
-# DATABASE
+
+# DATABASE & ORM
 psycopg2-binary>=2.9.0,<3.0.0  # PostgreSQL adapter
 sqlalchemy>=2.0.0,<3.0.0
 alembic>=1.12.0,<2.0.0  # Database migrations
 
-# Optional: Redis for caching
-# redis>=5.0.0,<6.0.0
-# hiredis>=2.2.0  # Faster Redis client
+# REAL-TIME & CACHING (v3.5)
+redis>=5.0.0,<6.0.0  # Real-time personalization layer
+hiredis>=2.2.0,<3.0.0 # Faster Redis client (C bindings)
+
+# ASYNC TASK QUEUE (v3.5)
+rq>=1.15.0,<2.0.0  # Redis Queue (lightweight async tasks)
+# Alternative: celery[redis]>=5.3.0  # Full-featured (overkill for thesis)
+
+# DATA VERSIONING (OPTIONAL - for reproducibility)
+# dvc>=3.0.0,<4.0.0  # Data Version Control (uncomment if needed)
+
 
 # DASHBOARD & VISUALIZATION
 streamlit>=1.28.0,<2.0.0
@@ -53,7 +62,6 @@ seaborn>=0.12.0,<1.0.0
 altair>=5.0.0,<6.0.0  # Alternative viz library
 
 # DATA PROCESSING & UTILITIES
-pyarrow>=13.0.0,<14.0.0  # Parquet support
 python-dotenv>=1.0.0,<2.0.0  # Environment variables
 pyyaml>=6.0.0,<7.0.0  # Config files
 tqdm>=4.66.0,<5.0.0  # Progress bars
@@ -77,9 +85,9 @@ urllib3>=2.0.0,<3.0.0
 
 # TESTING
 
-pytest>=7.4.0,<8.0.0
-pytest-cov>=4.1.0,<5.0.0
-pytest-asyncio>=0.21.0,<1.0.0
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
 hypothesis>=6.88.0,<7.0.0  # Property-based testing
 
 # CODE QUALITY & FORMATTING
@@ -93,6 +101,8 @@ pylint>=3.0.0,<4.0.0  # Additional linting
 pandas-stubs>=2.0.0
 types-requests>=2.31.0
 types-PyYAML>=6.0.0
+types-setuptools>=68.0.0
+
 
 # DOCUMENTATION
 mkdocs>=1.5.0,<2.0.0  # Documentation generator
@@ -118,25 +128,29 @@ numba>=0.58.0,<1.0.0  # JIT compilation for numerical code (optional)
 # dask[dataframe]>=2023.10.0
 
 # JUPYTER & NOTEBOOKS (Development)
-jupyter>=1.0.0,<2.0.0
-ipykernel>=6.26.0,<7.0.0
-ipywidgets>=8.1.0,<9.0.0
-notebook>=7.0.0,<8.0.0
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.25.0
+ipywidgets>=8.1.0
 
-# EU AI ACT COMPLIANCE (Custom)
-# reportlab>=4.0.0,<5.0.0  # PDF generation for compliance reports
+# PDF REPORTING (v3.5 NEW! - EU AI Act compliance)
+reportlab>=4.0.0,<5.0.0  # PDF generation for compliance reports
 # weasyprint>=60.0  # HTML to PDF (alternative)
+# Alternative: fpdf2>=2.7.0 # Lighter option (uncomment if needed)
 
 # ADDITIONAL UTILITIES
 python-dateutil>=2.8.0,<3.0.0
 pytz>=2023.3
 click>=8.1.0,<9.0.0  # CLI framework
 
+
 # OPTIONAL: ADVANCED FEATURES
 # optuna>=3.4.0  # Hyperparameter optimization
 # ray[tune]>=2.7.0  # Distributed hyperparameter tuning
 # apache-airflow>=2.7.0  # Workflow orchestration (for production)
 # kafka-python>=2.0.0  # Apache Kafka client (for event streaming)
+# prometheus-client>=0.18.0  # Metrics collection
+# grafana-client>=3.5.0     # Dashboard integration
 
 # NOTES
 # To install all dependencies:
@@ -150,3 +164,22 @@ click>=8.1.0,<9.0.0  # CLI framework
 
 # For production (minimal, no dev tools):
 #   Create requirements-prod.txt with core dependencies only
+
+# v3.5 Additions (2025-12-20):
+# - pydantic[email]: EU AI Act compliance (email reports)
+# - reportlab: Professional PDF generation
+# - rq: Async task queue for auto-retraining
+# - hiredis: Redis performance optimization
+# - types-*: Type safety for professional codebase
+# - black + isort: Code quality standards
+#
+# Production Deployment:
+# 1. Uncomment redis lines for real-time features
+# 2. Uncomment dvc for data versioning
+# 3. Uncomment prometheus for monitoring
+# 4. Consider celery for heavy production loads
+#
+# Installation:
+# pip install -r requirements.txt --break-system-packages (macOS)
+# pip install -r requirements.txt (Linux/Windows)
+

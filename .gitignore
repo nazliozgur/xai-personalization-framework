@@ -441,3 +441,5 @@ cache/
 # Utilities (reusable code)
 !src/utils/publication_viz_template.py
 
+# Redis
+dump.rdb
