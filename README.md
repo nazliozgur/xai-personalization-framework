@@ -188,17 +188,17 @@ Quantifies AI value through metrics that matter to stakeholders. The framework i
 
 ```mermaid
 flowchart TD
-    A[User Interface<br/>Multi-Stakeholder Views] --> B[Adaptive Learning Loop <br/>6 Components]
-    B --> C[XAI Engines<br/>NIST Compliant]
-    C --> D[Cross-Domain<br/>E-commerce | Finance | Insurance]
-    D --> E[Model Infrastructure<br/>LightGBM + MLflow + Redis]
+    A["User Interface<br/>Multi-Stakeholder Views"] --> B["Adaptive Learning Loop<br/>6 Components"]
+    B --> C["XAI Engines<br/>NIST Compliant"]
+    C --> D["Cross-Domain<br/>E-commerce | Finance | Insurance"]
+    D --> E["Model Infrastructure<br/>LightGBM + MLflow + Redis"]
     
-    B --> B1[Real-Time<br/>Redis]
-    B --> B2[Drift Detection<br/>CTR/Conversion]
-    B --> B3[Auto-Retrain<br/>MLflow A/B]
-    B --> B4[Bias Scanner<br/>Fairlearn]
-    B --> B5[Audit Logs<br/>Hash-chain]
-    B --> B6[Compliance<br/>EU AI Act]
+    B --> B1["Real-Time<br/>Redis"]
+    B --> B2["Drift Detection<br/>CTR/Conversion"]
+    B --> B3["Auto-Retrain<br/>MLflow A/B"]
+    B --> B4["Bias Scanner<br/>Fairlearn"]
+    B --> B5["Audit Logs<br/>Hash-chain"]
+    B --> B6["Compliance<br/>EU AI Act"]
     
     style B fill:#ffe0e0,stroke:#c62828,stroke-width:4px
     style B1 fill:#fff,stroke:#666,stroke-width:2px
