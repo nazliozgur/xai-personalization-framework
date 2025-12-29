@@ -443,3 +443,266 @@ cache/
 
 # Redis
 dump.rdb
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# v3.6 Additions
+
+# Proxy taxonomy outputs
+data/processed/proxy_taxonomy.json
+
+# Serving logs
+logs/serving.log
+logs/serving.log.*
+
+# Compliance audit reports
+docs/compliance_audit.json
+docs/audit_*.json
+
+# Model fidelity reports
+docs/fidelity_report_*.json
+
+# Backup files
+*.backup
+*~
+
+# Redis dumps
+dump.rdb
+*.rdb
+
+# Temporary test outputs
+tests/output/
+.pytest_cache/
+
+# MLflow artifacts (if not already covered)
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# VSCode settings (keep local)
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

@@ -1,0 +1,98 @@
+# ============================================================================
+# Feature Metadata for Governance & XAI
+# v3.6 IMPROVEMENT 2: Human-readable feature classification
+# ============================================================================
+
+features:
+  # ====== CAUSAL FEATURES (Unchangeable) ======
+  user_age:
+    type: "Causal"
+    manipulable: false
+    gaming_risk: "NONE"
+    causal_parent: "demographics"
+    description: "User age - cannot be changed"
+  
+  account_created_date:
+    type: "Causal"
+    manipulable: false
+    gaming_risk: "NONE"
+    causal_parent: "temporal"
+    description: "Account creation date - historical fact"
+  
+  user_gender:
+    type: "Causal"
+    manipulable: false
+    gaming_risk: "NONE"
+    causal_parent: "demographics"
+    description: "User gender - demographic attribute"
+  
+  # ====== PROXY FEATURES (High Gaming Risk) ======
+  helpful_vote:
+    type: "Proxy"
+    manipulable: true
+    gaming_risk: "HIGH"
+    causal_parent: null
+    description: "Helpful votes - easily manipulable engagement metric"
+  
+  review_count:
+    type: "Proxy"
+    manipulable: true
+    gaming_risk: "HIGH"
+    causal_parent: null
+    description: "Number of reviews - can be artificially inflated"
+  
+  avg_rating_given:
+    type: "Proxy"
+    manipulable: true
+    gaming_risk: "HIGH"
+    causal_parent: null
+    description: "Average rating given by user - gaming possible"
+  
+  engagement_score:
+    type: "Proxy"
+    manipulable: true
+    gaming_risk: "HIGH"
+    causal_parent: null
+    description: "Engagement score - surface-level metric"
+  
+  # ====== ACTIONABLE FEATURES (Legitimate User Control) ======
+  verified_purchase:
+    type: "Actionable"
+    manipulable: true
+    gaming_risk: "MEDIUM"
+    causal_parent: null
+    description: "Verified purchase status - user can verify legitimately"
+  
+  review_length:
+    type: "Actionable"
+    manipulable: true
+    gaming_risk: "MEDIUM"
+    causal_parent: null
+    description: "Review text length - user can write more"
+  
+  profile_completeness:
+    type: "Actionable"
+    manipulable: true
+    gaming_risk: "LOW"
+    causal_parent: null
+    description: "Profile completion percentage - user controls"
+  
+  premium_subscription:
+    type: "Actionable"
+    manipulable: true
+    gaming_risk: "LOW"
+    causal_parent: null
+    description: "Premium subscription status - user choice"
+
+# ====== GOVERNANCE NOTES ======
+governance:
+  last_updated: "2025-12-28"
+  auditor: "Nazlı Özgür"
+  compliance:
+    - "EU AI Act Article 10 (Data Quality)"
+    - "NIST IR 8312 Principle 1 (Explanation)"
+  notes: |
+    This metadata ensures:
+    1. Proxy features are monitored for gaming
+    2. Counterfactuals only suggest actionable changes
+    3. Admin view shows full truth, user view filters appropriately

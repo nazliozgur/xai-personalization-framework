@@ -1,0 +1,5 @@
+"""XAE-Frame version information"""
+__version__ = "3.6.0"
+__author__ = "Nazlı Özgür"
+__email__ = "your-email@example.com"
+__description__ = "Explainable AI Framework for Cross-Domain Personalization"

@@ -1,0 +1,53 @@
+# Finance Domain Configuration
+domain:
+  name: finance
+  description: "Credit scoring and loan approval prediction"
+
+schema:
+  user_id:
+    - customer_id
+    - applicant_id
+  item_id:
+    - loan_id
+    - product_id
+  target:
+    - credit_score
+    - default_risk
+  timestamp:
+    - application_date
+    - timestamp
+  verification:
+    - verified_account
+    - kyc_verified
+  engagement:
+    - app_usage_frequency
+    - transaction_count
+  text:
+    - customer_notes
+    - application_notes
+
+target:
+  type: credit_score
+  range: [300, 850]
+  distribution: normal
+
+features:
+  temporal:
+    - days_since_account_open
+    - transaction_frequency
+  financial:
+    - income
+    - debt_to_income_ratio
+    - account_balance
+  user:
+    - payment_history
+    - credit_utilization
+  item:
+    - loan_amount
+    - interest_rate
+
+business_kpis:
+  - Default Risk
+  - Customer Profitability
+  - Fraud Detection
+  - Cross-Sell Opportunity

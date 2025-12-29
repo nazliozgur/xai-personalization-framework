@@ -1,0 +1,52 @@
+# Insurance Domain Configuration
+domain:
+  name: insurance
+  description: "Claim frequency prediction and policy pricing"
+
+schema:
+  user_id:
+    - policy_holder_id
+    - customer_id
+  item_id:
+    - policy_id
+    - policy_number
+  target:
+    - claim_frequency
+    - claim_amount
+  timestamp:
+    - policy_start_date
+    - claim_date
+  verification:
+    - verified_identity
+    - kyc_complete
+  engagement:
+    - policy_review_frequency
+    - claim_submission_count
+  text:
+    - claim_description
+    - notes
+
+target:
+  type: claim_frequency
+  range: [0, null]  # 0 to N
+  distribution: poisson
+
+features:
+  temporal:
+    - policy_age_days
+    - days_since_last_claim
+  risk:
+    - risk_score
+    - coverage_amount
+  user:
+    - claim_history
+    - premium_payment_consistency
+  item:
+    - policy_type
+    - coverage_level
+
+business_kpis:
+  - Claim Frequency Prediction
+  - Policy Renewal Rate
+  - Loss Ratio Optimization
+  - Fraud Detection
