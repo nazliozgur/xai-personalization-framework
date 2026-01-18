@@ -1,4 +1,4 @@
-# XAE-Frame: Explainable, Adaptive & Ethical AI Framework for Cross-Domain Personalization
+# XAE-Frame: Explainable, Adaptive & Ethical AI Framework for Domain-Agnostic Personalization
 
 [![Version](https://img.shields.io/badge/version-3.6-blue.svg)](https://github.com/nazliozgur/xai-personalization-framework)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,7 +10,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 
-**A production-ready AI framework combining explainability, adaptive learning, and ethical oversight for trustworthy cross-domain recommendation systems.**
+**A production-ready, domain-agnostic AI framework combining explainability, adaptive learning, and ethical oversight for trustworthy personalization systems across any industry.**
 
 > **M.Sc. Thesis Project** | Istanbul University - Management Information Systems  
 > **Author:** Nazlı Özgür | **Industry Partner:** MindTech
@@ -37,19 +37,19 @@ Modern recommendation systems face a critical challenge: they optimize for accur
 
 With **EU AI Act enforcement** beginning in 2025, organizations need AI systems that are not only accurate but also explainable (moving beyond black-box decisions), adaptive (solving the "Model Drift" problem automatically), auditable (preventing proxy manipulation and algorithmic bias) and verifiably fair. 
 
-**XAE-Frame addresses these challenges** by integrating explainability, adaptive learning, cross-domain transfer, and ethical monitoring into a unified framework designed for enterprise deployment. By complying with Google ML Rule #32 and NIST standards, it ensures that the system is as reliable in production as it is in training.
+**XAE-Frame addresses these challenges** by integrating explainability, adaptive learning, industry-agnostic architecture, and ethical monitoring into a unified framework designed for enterprise deployment. By complying with Google ML Rule #32 and NIST standards, it ensures that the system is as reliable in production as it is in training.
 
 
 ---
 
 ##  Executive Summary
 
-XAE-Frame is a **production-ready AI framework** designed for cross-domain personalization with built-in explainability, adaptability, and ethical compliance. Unlike traditional "black-box" AI systems, XAE-Frame ensures:
+XAE-Frame is a **production-ready, domain-agnostic AI framework** designed for personalization with built-in explainability, adaptability, and ethical compliance. Unlike traditional "black-box" AI systems, XAE-Frame ensures:
 
 -  **Transparency & Actionability**: Every prediction comes with clear, stakeholder-specific explanations (NIST-compliant). (v3. 6: Now includes counterfactual      "what-if" scenarios for end-users via DiCE-ML).
 -  **Adaptability & Reliability**: Automatic drift detection and retraining strategies keep models accurate over time. (v3.6: Reinforced with Google ML Rule #32 skew tests to ensure production stability).
 -  **Ethical Integrity**: Continuous bias monitoring and mitigation aligned with EU AI Act requirements. (v3.6: Introducing Proxy-Aware XAI to detect and prevent system manipulation or gaming).
--  **Cross-Domain Resilience**: Transfer knowledge across e-commerce, finance, and insurance sectors using a domain-agnostic architecture and config-driven deployment.
+-  **Industry-Agnostic Design**: Transfer knowledge across e-commerce, finance, insurance, and ANY sector using a flexible, config-driven deployment architecture.
 -  **Business Value**: Direct mapping of AI performance (including new Fidelity and Stability metrics) to business KPIs (ROI, churn reduction, revenue).
 
 ---
@@ -72,19 +72,19 @@ According to [McKinsey's 2022 research](https://www.mckinsey.com/capabilities/qu
 - **Algorithmic Bias** → *Solution:* Real-time Fairlearn monitoring + **Proxy-Aware** feature taxonomy.
 - **Domain Isolation** → *Solution:* Domain-agnostic config-driven architecture for rapid sector adaptation.
 
-**XAE-Frame solves these challenges** by integrating explainability, adaptability, ethics, and cross-domain transfer into a single, cohesive, and auditable framework.
+**XAE-Frame solves these challenges** by integrating explainability, adaptability, ethics, and industry-independent architecture into a single, cohesive, and auditable framework.
 
 ## Key Capabilities (v3.6 Enhanced)
 
-### Cross-Domain Personalization
-Transfer user preferences and behavioral patterns across different business domains (e-commerce, finance, insurance). The framework enables meaningful knowledge transfer through:
+### Domain-Agnostic Personalization
+Adaptable to any industry or use case—e-commerce, finance, insurance, healthcare, education, and beyond. The framework enables seamless deployment across sectors through:
 
-- **Sector Adaptation Modules**: Config-based deployment across e-commerce, finance, and insurance. (v3.6: Domain-agnostic architecture ensures seamless transition without retraining core logic).
-- **Domain-agnostic pipeline**: Same LightGBM architecture, SHAP explainability and fairness monitoring applied universally.
+- **Sector Adaptation Modules**: Config-based deployment across e-commerce, finance, insurance, and ANY domain. (v3.6: Domain-agnostic architecture ensures seamless transition without retraining core logic).
+- **Industry-independent pipeline**: Same LightGBM architecture, SHAP explainability and fairness monitoring applied universally.
 - **Rapid deployment**: 1-2 weeks per new sector using configuration templates.
 - **Preserved explainability**: SHAP values remain interpretable across domain boundaries. (v3.6: Enhanced with Cross-Domain Fidelity metrics to ensure explanation quality stays >0.90).
 
-**Key benefit:** Solve cold-start problems in new domains by leveraging rich, auditable knowledge from existing deployments.
+**Key benefit:** Solve cold-start problems in new domains by leveraging rich, auditable knowledge from existing deployments. The framework is NOT limited to multi-category scenarios—it works equally well for single-category systems or entirely new industries.
 
 
 ### Explainable AI Integration (NIST-Compliant & Dual-Layer)
@@ -192,7 +192,7 @@ Quantifies AI value through metrics that matter to stakeholders. The framework i
 flowchart TD
     A["User Interface<br/>Dual-Stakeholder Views"] --> B["Adaptive Learning Loop<br/>v3.6 Enhanced"]
     B --> C["XAI Engines<br/>NIST Compliant"]
-    C --> D["Cross-Domain Adaptation<br/>E-commerce | Finance | Insurance"]
+    C --> D["Industry Adaptation<br/>E-commerce | Finance | Insurance"]
     D --> E["Model Infrastructure<br/>Dual-Baseline + MLflow + Redis"]
     
     B --> B1["Real-Time Layer<br/>Redis + Metadata"]
@@ -320,7 +320,7 @@ flowchart TD
 └────────────────────────────┬────────────────────────────────────────┘
                              │
 ┌────────────────────────────▼────────────────────────────────────────┐
-│              LAYER 5: CROSS-DOMAIN ADAPTATION                       │
+│              LAYER 5: INDUSTRY ADAPTATION                           │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
 │  ┌──────────────────────────────────────────────────────────────┐   │
@@ -651,11 +651,10 @@ xae-frame/
 
 ## Novel Contributions
 
-This work introduces four methodological innovations to cross-domain recommendation systems:
+This work introduces four methodological innovations to domain-agnostic personalization systems:
+**1. Explanation Knowledge Transfer (Industry-Independent)**
 
-**1. Explanation Knowledge Transfer (Domain-Agnostic)**
-
-Traditional cross-domain systems transfer interaction patterns but lose semantic reasoning. XAE-Frame preserves and transfers explanation patterns.
+Traditional multi-domain systems transfer interaction patterns but lose semantic reasoning. XAE-Frame preserves and transfers explanation patterns across any industry.
 
 Example: A user preferring "award-winning" books (quality focus) receives "premium" financial products.
 
@@ -676,8 +675,7 @@ The first systematic approach to identify and mitigate "Gaming the System" risks
 
 **4. Production-Grade Reliability via Google ML Rule #32**
 
- Integration of a real-time Training-Serving Skew Detection layer. This innovation ensures that cross-domain knowledge transfer doesn't introduce logical discrepancies when the model moves from a training environment to a high-concurrency production environment (Redis-backed feature store).
-
+Integration of a real-time Training-Serving Skew Detection layer. This innovation ensures that knowledge transfer across industries doesn't introduce logical discrepancies when the model moves from a training environment to a high-concurrency production environment (Redis-backed feature store).
 ---
 
 ## Development Roadmap
@@ -705,8 +703,8 @@ The first systematic approach to identify and mitigate "Gaming the System" risks
 - Metrics Implementation of Fidelity and Stability scoring
 
 
-**Phase 4: Cross-Domain & Integration**
-- Transfer learning & Domain-agnostic configuration templates
+**Phase 4: Industry Adaptation & Integration**
+- Transfer learning & Industry-agnostic configuration templates
 - Explanation knowledge transfer (Stable explanation patterns)
 - Finance & insurance adaptations
 - Dual-Entry Dashboard: Admin (Technical) vs. User (Actionable) views
@@ -758,12 +756,12 @@ Our framework implements the [NIST IR 8312](https://www.nist.gov/publications/fo
 
 ### Academic Contributions
 - Novel XAI Integration: A methodology for implementing NIST XAI principles into production ML systems using dual-layer (SHAP + DiCE) explanations.
-- Reliability Study: Empirical analysis of the effectiveness of automated drift and skew detection across cross-domain deployments.
+- Reliability Study: Empirical analysis of the effectiveness of automated drift and skew detection across industry-agnostic deployments.
 - Ethical Framework: A novel approach to Proxy-Aware Gaming Prevention, ensuring model integrity against manipulation.
 - KPI Mapping: A formal framework for mapping technical XAI metrics (Fidelity, Stability) to business KPIs (ROI, Trust).
 
 ### Practical Outputs
-- XAE-Frame v3.6 Core: An open-source, production-ready framework with built-in Google ML Rule #32 compliance.
+- XAE-Frame v3.6 Core: An open-source, production-ready, domain-agnostic framework with built-in Google ML Rule #32 compliance.
 - Deployment Assets: Deployment-ready Docker containers and FastAPI endpoints with integrated Redis metadata layers.
 - Documentation: Comprehensive industry guides for EU AI Act compliance and NIST-standard implementation.
 
@@ -781,7 +779,7 @@ Our framework implements the [NIST IR 8312](https://www.nist.gov/publications/fo
 - European Commission (2024). *EU Artificial Intelligence Act*. [Link](https://artificialintelligenceact.eu/)
 - Google ML Rules: Zinkevich, M. (2023). *ules of Machine Learning: Best Practices for ML Engineering (Rule #32: Training-Serving Skew)* [Link] (https://developers.google.com/machine-learning/guides/rules-of-ml?hl=tr)
 
-**Cross-Domain Recommendation**
+**Domain-Agnostic Recommendation**
 - Petruzzelli, A., et al. (2024). Instructing and Prompting Large Language Models for Explainable Cross-Domain Recommendations. ACM RecSys '24.
 - Hou, Y., et al. (2024). Bridging Language and Items for Retrieval and Recommendation. arXiv:2403.03952.
 
@@ -802,8 +800,8 @@ Full bibliography available in `docs/references.md`
 While the current v3.6 architecture is future-proof through 2040 by adhering to Google ML Rule #32 and NIST standards, these advanced features represent the next generation of research directions for XAE-Frame:
 
 ### **Universal User Embeddings** (Target: 2027-2030)
-- **Current Status:** Domain-specific feature engineering (v3.6 Proxy-Aware Taxonomy))
-- **Future Enhancement:** Transformer-based (LLM-backed) cross-domain user representation
+- **Current Status:** Industry-specific feature engineering (v3.6 Proxy-Aware Taxonomy))
+- **Future Enhancement:** Transformer-based (LLM-backed) industry-independent user representation
 - **Benefit:** Zero-shot recommendations; understanding a user's "quality preference" in E-commerce and immediately applying it to Finance without historical data
 - **Challenge:** Requires extreme computational resources and mature foundation models
 - **Note:** XAE-Frame v3.6 is already modularized to accommodate high-dimensional embeddings
@@ -841,8 +839,8 @@ XAE-Frame v3.6 leverages its Dual-Layer XAI and Proxy-Aware architecture to prov
 **Insurance**
 - *Risk Transparency*: Policy recommendations with risk factor explanations and fair pricing across demographic groups.
 - *v3.6 Innovation*: Google ML Rule #32 Monitoring ensures that real-time claim predictions are statistically consistent with historical actuarial data, preventing "silent failures" in risk assessment.
-- *Cross-Domain Insight*: Coverage suggestions informed by purchasing behavior across diverse domains 
-(e.g., gift card purchasing patterns revealing seasonal trends, or music preferences indicating entertainment consumption behavior)
+- *Industry Insight*: Coverage suggestions informed by purchasing behavior across diverse product categories (e.g., seasonal trends, lifestyle indicators)
+
 
 ---
 
