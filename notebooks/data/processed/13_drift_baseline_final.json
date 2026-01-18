@@ -1,0 +1,2138 @@
+{
+  "timestamp": "2026-01-18T15:36:09.277092",
+  "rating": {
+    "mean": 4.385746666666667,
+    "std": 1.2170720795021597,
+    "median": 5.0
+  },
+  "temporal_stats": [
+    {
+      "year_month": "1998-04",
+      "rating_mean": 5.0,
+      "rating_std": NaN,
+      "count": 1,
+      "helpful_mean": 4.0
+    },
+    {
+      "year_month": "1998-07",
+      "rating_mean": 4.5,
+      "rating_std": 0.7071067811865476,
+      "count": 2,
+      "helpful_mean": 1.0
+    },
+    {
+      "year_month": "1998-08",
+      "rating_mean": 4.5,
+      "rating_std": 0.7071067811865476,
+      "count": 2,
+      "helpful_mean": 1.0
+    },
+    {
+      "year_month": "1998-09",
+      "rating_mean": 5.0,
+      "rating_std": 0.0,
+      "count": 3,
+      "helpful_mean": 5.333333333333333
+    },
+    {
+      "year_month": "1998-10",
+      "rating_mean": 3.0,
+      "rating_std": NaN,
+      "count": 1,
+      "helpful_mean": 0.0
+    },
+    {
+      "year_month": "1998-11",
+      "rating_mean": 5.0,
+      "rating_std": 0.0,
+      "count": 2,
+      "helpful_mean": 0.5
+    },
+    {
+      "year_month": "1998-12",
+      "rating_mean": 4.5,
+      "rating_std": 0.7071067811865476,
+      "count": 2,
+      "helpful_mean": 3.0
+    },
+    {
+      "year_month": "1999-01",
+      "rating_mean": 4.0,
+      "rating_std": NaN,
+      "count": 1,
+      "helpful_mean": 1.0
+    },
+    {
+      "year_month": "1999-02",
+      "rating_mean": 5.0,
+      "rating_std": NaN,
+      "count": 1,
+      "helpful_mean": 0.0
+    },
+    {
+      "year_month": "1999-03",
+      "rating_mean": 4.0,
+      "rating_std": 1.7320508075688772,
+      "count": 3,
+      "helpful_mean": 0.0
+    },
+    {
+      "year_month": "1999-04",
+      "rating_mean": 5.0,
+      "rating_std": NaN,
+      "count": 1,
+      "helpful_mean": 1.0
+    },
+    {
+      "year_month": "1999-05",
+      "rating_mean": 4.666666666666667,
+      "rating_std": 0.5773502691896257,
+      "count": 3,
+      "helpful_mean": 3.3333333333333335
+    },
+    {
+      "year_month": "1999-06",
+      "rating_mean": 5.0,
+      "rating_std": 0.0,
+      "count": 2,
+      "helpful_mean": 1.5
+    },
+    {
+      "year_month": "1999-07",
+      "rating_mean": 5.0,
+      "rating_std": 0.0,
+      "count": 3,
+      "helpful_mean": 1.0
+    },
+    {
+      "year_month": "1999-08",
+      "rating_mean": 4.666666666666667,
+      "rating_std": 0.5163977794943222,
+      "count": 6,
+      "helpful_mean": 4.0
+    },
+    {
+      "year_month": "1999-09",
+      "rating_mean": 5.0,
+      "rating_std": 0.0,
+      "count": 5,
+      "helpful_mean": 2.8
+    },
+    {
+      "year_month": "1999-10",
+      "rating_mean": 3.0,
+      "rating_std": 2.309401076758503,
+      "count": 4,
+      "helpful_mean": 2.5
+    },
+    {
+      "year_month": "1999-11",
+      "rating_mean": 4.6,
+      "rating_std": 0.6992058987801011,
+      "count": 10,
+      "helpful_mean": 8.6
+    },
+    {
+      "year_month": "1999-12",
+      "rating_mean": 4.222222222222222,
+      "rating_std": 1.3944333775567928,
+      "count": 9,
+      "helpful_mean": 6.0
+    },
+    {
+      "year_month": "2000-01",
+      "rating_mean": 4.0625,
+      "rating_std": 1.181453906563152,
+      "count": 16,
+      "helpful_mean": 4.1875
+    },
+    {
+      "year_month": "2000-02",
+      "rating_mean": 4.25,
+      "rating_std": 1.0733936430981312,
+      "count": 24,
+      "helpful_mean": 4.083333333333333
+    },
+    {
+      "year_month": "2000-03",
+      "rating_mean": 4.266666666666667,
+      "rating_std": 1.2227992865708155,
+      "count": 15,
+      "helpful_mean": 2.066666666666667
+    },
+    {
+      "year_month": "2000-04",
+      "rating_mean": 4.684210526315789,
+      "rating_std": 0.6710382982072028,
+      "count": 19,
+      "helpful_mean": 1.894736842105263
+    },
+    {
+      "year_month": "2000-05",
+      "rating_mean": 4.0,
+      "rating_std": 1.0690449676496976,
+      "count": 15,
+      "helpful_mean": 5.666666666666667
+    },
+    {
+      "year_month": "2000-06",
+      "rating_mean": 4.545454545454546,
+      "rating_std": 0.5958006000151015,
+      "count": 22,
+      "helpful_mean": 3.3636363636363638
+    },
+    {
+      "year_month": "2000-07",
+      "rating_mean": 4.2105263157894735,
+      "rating_std": 1.2727462594467416,
+      "count": 19,
+      "helpful_mean": 8.631578947368421
+    },
+    {
+      "year_month": "2000-08",
+      "rating_mean": 4.4,
+      "rating_std": 0.9684683962230045,
+      "count": 30,
+      "helpful_mean": 4.533333333333333
+    },
+    {
+      "year_month": "2000-09",
+      "rating_mean": 4.466666666666667,
+      "rating_std": 1.1254628677422758,
+      "count": 15,
+      "helpful_mean": 12.0
+    },
+    {
+      "year_month": "2000-10",
+      "rating_mean": 4.277777777777778,
+      "rating_std": 1.127493605332358,
+      "count": 18,
+      "helpful_mean": 3.1666666666666665
+    },
+    {
+      "year_month": "2000-11",
+      "rating_mean": 4.238095238095238,
+      "rating_std": 1.091089451179962,
+      "count": 21,
+      "helpful_mean": 7.142857142857143
+    },
+    {
+      "year_month": "2000-12",
+      "rating_mean": 3.9130434782608696,
+      "rating_std": 1.1246431142310664,
+      "count": 23,
+      "helpful_mean": 3.347826086956522
+    },
+    {
+      "year_month": "2001-01",
+      "rating_mean": 4.518518518518518,
+      "rating_std": 0.7529618628798984,
+      "count": 27,
+      "helpful_mean": 6.407407407407407
+    },
+    {
+      "year_month": "2001-02",
+      "rating_mean": 4.571428571428571,
+      "rating_std": 0.9376144618769909,
+      "count": 14,
+      "helpful_mean": 2.4285714285714284
+    },
+    {
+      "year_month": "2001-03",
+      "rating_mean": 4.086956521739131,
+      "rating_std": 1.0834726777719224,
+      "count": 23,
+      "helpful_mean": 11.043478260869565
+    },
+    {
+      "year_month": "2001-04",
+      "rating_mean": 4.269230769230769,
+      "rating_std": 0.8744228866031498,
+      "count": 26,
+      "helpful_mean": 15.461538461538462
+    },
+    {
+      "year_month": "2001-05",
+      "rating_mean": 4.266666666666667,
+      "rating_std": 1.0327955589886446,
+      "count": 15,
+      "helpful_mean": 8.066666666666666
+    },
+    {
+      "year_month": "2001-06",
+      "rating_mean": 4.2,
+      "rating_std": 0.8618916073713346,
+      "count": 15,
+      "helpful_mean": 11.866666666666667
+    },
+    {
+      "year_month": "2001-07",
+      "rating_mean": 4.357142857142857,
+      "rating_std": 1.0615950861718073,
+      "count": 28,
+      "helpful_mean": 4.107142857142857
+    },
+    {
+      "year_month": "2001-08",
+      "rating_mean": 3.9210526315789473,
+      "rating_std": 1.2815020525416896,
+      "count": 38,
+      "helpful_mean": 3.1315789473684212
+    },
+    {
+      "year_month": "2001-09",
+      "rating_mean": 4.52,
+      "rating_std": 0.8225975119502045,
+      "count": 25,
+      "helpful_mean": 1.72
+    },
+    {
+      "year_month": "2001-10",
+      "rating_mean": 3.95,
+      "rating_std": 1.5381123085406379,
+      "count": 20,
+      "helpful_mean": 4.1
+    },
+    {
+      "year_month": "2001-11",
+      "rating_mean": 4.0,
+      "rating_std": 1.541103500742244,
+      "count": 17,
+      "helpful_mean": 6.294117647058823
+    },
+    {
+      "year_month": "2001-12",
+      "rating_mean": 4.416666666666667,
+      "rating_std": 1.1645001528813148,
+      "count": 12,
+      "helpful_mean": 4.75
+    },
+    {
+      "year_month": "2002-01",
+      "rating_mean": 3.75,
+      "rating_std": 1.7003835884370582,
+      "count": 24,
+      "helpful_mean": 12.791666666666666
+    },
+    {
+      "year_month": "2002-02",
+      "rating_mean": 4.166666666666667,
+      "rating_std": 1.3405601251996728,
+      "count": 24,
+      "helpful_mean": 3.7083333333333335
+    },
+    {
+      "year_month": "2002-03",
+      "rating_mean": 4.0,
+      "rating_std": 1.0871146130092182,
+      "count": 23,
+      "helpful_mean": 7.695652173913044
+    },
+    {
+      "year_month": "2002-04",
+      "rating_mean": 4.1,
+      "rating_std": 1.0208355710680805,
+      "count": 20,
+      "helpful_mean": 2.55
+    },
+    {
+      "year_month": "2002-05",
+      "rating_mean": 3.791304347826087,
+      "rating_std": 1.3542470937058375,
+      "count": 230,
+      "helpful_mean": 4.317391304347826
+    },
+    {
+      "year_month": "2002-06",
+      "rating_mean": 3.905263157894737,
+      "rating_std": 1.3214569990067646,
+      "count": 95,
+      "helpful_mean": 3.831578947368421
+    },
+    {
+      "year_month": "2002-07",
+      "rating_mean": 4.032786885245901,
+      "rating_std": 1.2242986170967998,
+      "count": 61,
+      "helpful_mean": 3.8524590163934427
+    },
+    {
+      "year_month": "2002-08",
+      "rating_mean": 3.9310344827586206,
+      "rating_std": 1.5336938249756606,
+      "count": 29,
+      "helpful_mean": 6.896551724137931
+    },
+    {
+      "year_month": "2002-09",
+      "rating_mean": 4.666666666666667,
+      "rating_std": 0.7784989441615232,
+      "count": 12,
+      "helpful_mean": 4.583333333333333
+    },
+    {
+      "year_month": "2002-10",
+      "rating_mean": 3.8181818181818183,
+      "rating_std": 1.0970247050377688,
+      "count": 22,
+      "helpful_mean": 2.9545454545454546
+    },
+    {
+      "year_month": "2002-11",
+      "rating_mean": 3.764705882352941,
+      "rating_std": 1.3004524099667143,
+      "count": 17,
+      "helpful_mean": 3.0588235294117645
+    },
+    {
+      "year_month": "2002-12",
+      "rating_mean": 4.375,
+      "rating_std": 0.8850612031567837,
+      "count": 16,
+      "helpful_mean": 3.5625
+    },
+    {
+      "year_month": "2003-01",
+      "rating_mean": 4.25,
+      "rating_std": 1.3568010505999362,
+      "count": 12,
+      "helpful_mean": 3.0833333333333335
+    },
+    {
+      "year_month": "2003-02",
+      "rating_mean": 4.7368421052631575,
+      "rating_std": 0.6533762964749499,
+      "count": 19,
+      "helpful_mean": 5.0
+    },
+    {
+      "year_month": "2003-03",
+      "rating_mean": 4.411764705882353,
+      "rating_std": 1.0641207361838556,
+      "count": 17,
+      "helpful_mean": 2.764705882352941
+    },
+    {
+      "year_month": "2003-04",
+      "rating_mean": 4.3125,
+      "rating_std": 1.0781929326423914,
+      "count": 16,
+      "helpful_mean": 6.4375
+    },
+    {
+      "year_month": "2003-05",
+      "rating_mean": 4.875,
+      "rating_std": 0.3535533905932738,
+      "count": 8,
+      "helpful_mean": 1.75
+    },
+    {
+      "year_month": "2003-06",
+      "rating_mean": 4.357142857142857,
+      "rating_std": 1.2774459408789605,
+      "count": 14,
+      "helpful_mean": 3.7142857142857144
+    },
+    {
+      "year_month": "2003-07",
+      "rating_mean": 4.461538461538462,
+      "rating_std": 0.8770580193070292,
+      "count": 13,
+      "helpful_mean": 3.5384615384615383
+    },
+    {
+      "year_month": "2003-08",
+      "rating_mean": 3.8,
+      "rating_std": 1.3038404810405297,
+      "count": 5,
+      "helpful_mean": 3.2
+    },
+    {
+      "year_month": "2003-09",
+      "rating_mean": 4.2,
+      "rating_std": 1.0327955589886446,
+      "count": 10,
+      "helpful_mean": 18.4
+    },
+    {
+      "year_month": "2003-10",
+      "rating_mean": 3.272727272727273,
+      "rating_std": 1.9021518914592015,
+      "count": 11,
+      "helpful_mean": 2.3636363636363638
+    },
+    {
+      "year_month": "2003-11",
+      "rating_mean": 4.5,
+      "rating_std": 0.97182531580755,
+      "count": 10,
+      "helpful_mean": 7.5
+    },
+    {
+      "year_month": "2003-12",
+      "rating_mean": 4.705882352941177,
+      "rating_std": 0.5878675320972556,
+      "count": 17,
+      "helpful_mean": 4.705882352941177
+    },
+    {
+      "year_month": "2004-01",
+      "rating_mean": 4.523809523809524,
+      "rating_std": 0.9807674351775562,
+      "count": 21,
+      "helpful_mean": 10.952380952380953
+    },
+    {
+      "year_month": "2004-02",
+      "rating_mean": 3.909090909090909,
+      "rating_std": 1.3751033019046572,
+      "count": 11,
+      "helpful_mean": 9.272727272727273
+    },
+    {
+      "year_month": "2004-03",
+      "rating_mean": 4.294117647058823,
+      "rating_std": 1.046703508780838,
+      "count": 17,
+      "helpful_mean": 1.6470588235294117
+    },
+    {
+      "year_month": "2004-04",
+      "rating_mean": 3.9285714285714284,
+      "rating_std": 1.6391501416322993,
+      "count": 14,
+      "helpful_mean": 4.928571428571429
+    },
+    {
+      "year_month": "2004-05",
+      "rating_mean": 4.4,
+      "rating_std": 1.2649110640673518,
+      "count": 10,
+      "helpful_mean": 7.3
+    },
+    {
+      "year_month": "2004-06",
+      "rating_mean": 4.095238095238095,
+      "rating_std": 1.4458479140200706,
+      "count": 21,
+      "helpful_mean": 4.333333333333333
+    },
+    {
+      "year_month": "2004-07",
+      "rating_mean": 4.55,
+      "rating_std": 0.6863327411532596,
+      "count": 20,
+      "helpful_mean": 3.7
+    },
+    {
+      "year_month": "2004-08",
+      "rating_mean": 4.257142857142857,
+      "rating_std": 1.1464230084422218,
+      "count": 35,
+      "helpful_mean": 3.2285714285714286
+    },
+    {
+      "year_month": "2004-09",
+      "rating_mean": 4.407407407407407,
+      "rating_std": 1.0473137528296363,
+      "count": 27,
+      "helpful_mean": 5.37037037037037
+    },
+    {
+      "year_month": "2004-10",
+      "rating_mean": 4.470588235294118,
+      "rating_std": 0.7876045045674722,
+      "count": 34,
+      "helpful_mean": 4.147058823529412
+    },
+    {
+      "year_month": "2004-11",
+      "rating_mean": 4.4222222222222225,
+      "rating_std": 1.1379584768125308,
+      "count": 45,
+      "helpful_mean": 6.511111111111111
+    },
+    {
+      "year_month": "2004-12",
+      "rating_mean": 4.59375,
+      "rating_std": 0.8370214087522956,
+      "count": 32,
+      "helpful_mean": 2.96875
+    },
+    {
+      "year_month": "2005-01",
+      "rating_mean": 4.666666666666667,
+      "rating_std": 0.8728715609439698,
+      "count": 57,
+      "helpful_mean": 4.421052631578948
+    },
+    {
+      "year_month": "2005-02",
+      "rating_mean": 4.408163265306122,
+      "rating_std": 0.998297871106506,
+      "count": 49,
+      "helpful_mean": 7.8979591836734695
+    },
+    {
+      "year_month": "2005-03",
+      "rating_mean": 4.2592592592592595,
+      "rating_std": 1.1845735668543371,
+      "count": 54,
+      "helpful_mean": 4.537037037037037
+    },
+    {
+      "year_month": "2005-04",
+      "rating_mean": 4.351851851851852,
+      "rating_std": 1.2612872640852582,
+      "count": 54,
+      "helpful_mean": 4.388888888888889
+    },
+    {
+      "year_month": "2005-05",
+      "rating_mean": 4.340425531914893,
+      "rating_std": 1.1087908758149445,
+      "count": 47,
+      "helpful_mean": 4.319148936170213
+    },
+    {
+      "year_month": "2005-06",
+      "rating_mean": 4.113636363636363,
+      "rating_std": 1.4177595999668269,
+      "count": 44,
+      "helpful_mean": 4.0227272727272725
+    },
+    {
+      "year_month": "2005-07",
+      "rating_mean": 4.5,
+      "rating_std": 0.9486832980505134,
+      "count": 66,
+      "helpful_mean": 3.0454545454545454
+    },
+    {
+      "year_month": "2005-08",
+      "rating_mean": 4.685714285714286,
+      "rating_std": 0.733126264761273,
+      "count": 70,
+      "helpful_mean": 12.985714285714286
+    },
+    {
+      "year_month": "2005-09",
+      "rating_mean": 4.3428571428571425,
+      "rating_std": 1.114927882059919,
+      "count": 70,
+      "helpful_mean": 3.642857142857143
+    },
+    {
+      "year_month": "2005-10",
+      "rating_mean": 4.394736842105263,
+      "rating_std": 1.0208355710680805,
+      "count": 76,
+      "helpful_mean": 7.7894736842105265
+    },
+    {
+      "year_month": "2005-11",
+      "rating_mean": 4.027777777777778,
+      "rating_std": 1.4337208778404378,
+      "count": 72,
+      "helpful_mean": 5.902777777777778
+    },
+    {
+      "year_month": "2005-12",
+      "rating_mean": 4.345679012345679,
+      "rating_std": 1.130934279999953,
+      "count": 81,
+      "helpful_mean": 3.7037037037037037
+    },
+    {
+      "year_month": "2006-01",
+      "rating_mean": 4.675,
+      "rating_std": 0.725223666939109,
+      "count": 80,
+      "helpful_mean": 3.9375
+    },
+    {
+      "year_month": "2006-02",
+      "rating_mean": 4.346666666666667,
+      "rating_std": 1.1565715099628116,
+      "count": 75,
+      "helpful_mean": 4.293333333333333
+    },
+    {
+      "year_month": "2006-03",
+      "rating_mean": 4.410256410256411,
+      "rating_std": 1.0248331816852196,
+      "count": 78,
+      "helpful_mean": 3.2051282051282053
+    },
+    {
+      "year_month": "2006-04",
+      "rating_mean": 4.423728813559322,
+      "rating_std": 1.003500594136011,
+      "count": 59,
+      "helpful_mean": 5.491525423728813
+    },
+    {
+      "year_month": "2006-05",
+      "rating_mean": 4.583333333333333,
+      "rating_std": 0.7199733202840949,
+      "count": 60,
+      "helpful_mean": 6.25
+    },
+    {
+      "year_month": "2006-06",
+      "rating_mean": 4.453333333333333,
+      "rating_std": 1.1542323216113175,
+      "count": 75,
+      "helpful_mean": 4.8133333333333335
+    },
+    {
+      "year_month": "2006-07",
+      "rating_mean": 4.5,
+      "rating_std": 0.8195375470622296,
+      "count": 68,
+      "helpful_mean": 3.5
+    },
+    {
+      "year_month": "2006-08",
+      "rating_mean": 4.457142857142857,
+      "rating_std": 1.0992186195197773,
+      "count": 70,
+      "helpful_mean": 2.914285714285714
+    },
+    {
+      "year_month": "2006-09",
+      "rating_mean": 4.45945945945946,
+      "rating_std": 0.9678275232562393,
+      "count": 74,
+      "helpful_mean": 3.0
+    },
+    {
+      "year_month": "2006-10",
+      "rating_mean": 4.545454545454546,
+      "rating_std": 0.9636759458818761,
+      "count": 66,
+      "helpful_mean": 4.196969696969697
+    },
+    {
+      "year_month": "2006-11",
+      "rating_mean": 4.523255813953488,
+      "rating_std": 0.9908611131505946,
+      "count": 86,
+      "helpful_mean": 4.3604651162790695
+    },
+    {
+      "year_month": "2006-12",
+      "rating_mean": 4.44,
+      "rating_std": 0.9896764418028043,
+      "count": 75,
+      "helpful_mean": 4.32
+    },
+    {
+      "year_month": "2007-01",
+      "rating_mean": 4.534883720930233,
+      "rating_std": 0.8389587261516782,
+      "count": 129,
+      "helpful_mean": 3.0
+    },
+    {
+      "year_month": "2007-02",
+      "rating_mean": 4.391891891891892,
+      "rating_std": 1.0703675923126053,
+      "count": 74,
+      "helpful_mean": 2.8783783783783785
+    },
+    {
+      "year_month": "2007-03",
+      "rating_mean": 4.4361702127659575,
+      "rating_std": 0.9789011904214627,
+      "count": 94,
+      "helpful_mean": 3.3085106382978724
+    },
+    {
+      "year_month": "2007-04",
+      "rating_mean": 4.423913043478261,
+      "rating_std": 0.9046120612541377,
+      "count": 92,
+      "helpful_mean": 3.369565217391304
+    },
+    {
+      "year_month": "2007-05",
+      "rating_mean": 4.384615384615385,
+      "rating_std": 0.9584341224829469,
+      "count": 104,
+      "helpful_mean": 3.0673076923076925
+    },
+    {
+      "year_month": "2007-06",
+      "rating_mean": 4.445783132530121,
+      "rating_std": 0.9908485160019357,
+      "count": 83,
+      "helpful_mean": 2.746987951807229
+    },
+    {
+      "year_month": "2007-07",
+      "rating_mean": 4.456,
+      "rating_std": 1.0199936748696992,
+      "count": 125,
+      "helpful_mean": 3.752
+    },
+    {
+      "year_month": "2007-08",
+      "rating_mean": 4.424242424242424,
+      "rating_std": 1.040907268026695,
+      "count": 99,
+      "helpful_mean": 3.98989898989899
+    },
+    {
+      "year_month": "2007-09",
+      "rating_mean": 4.472,
+      "rating_std": 1.0439997528117368,
+      "count": 125,
+      "helpful_mean": 3.352
+    },
+    {
+      "year_month": "2007-10",
+      "rating_mean": 4.585365853658536,
+      "rating_std": 0.8770930868994264,
+      "count": 123,
+      "helpful_mean": 2.065040650406504
+    },
+    {
+      "year_month": "2007-11",
+      "rating_mean": 4.415094339622642,
+      "rating_std": 0.9036215445512457,
+      "count": 106,
+      "helpful_mean": 4.132075471698113
+    },
+    {
+      "year_month": "2007-12",
+      "rating_mean": 4.345132743362832,
+      "rating_std": 1.1161949994802558,
+      "count": 113,
+      "helpful_mean": 3.2920353982300883
+    },
+    {
+      "year_month": "2008-01",
+      "rating_mean": 4.474820143884892,
+      "rating_std": 0.9194432408879151,
+      "count": 139,
+      "helpful_mean": 3.2805755395683454
+    },
+    {
+      "year_month": "2008-02",
+      "rating_mean": 4.485981308411215,
+      "rating_std": 0.9552682719244064,
+      "count": 107,
+      "helpful_mean": 3.635514018691589
+    },
+    {
+      "year_month": "2008-03",
+      "rating_mean": 4.455223880597015,
+      "rating_std": 0.9308066809602125,
+      "count": 134,
+      "helpful_mean": 4.082089552238806
+    },
+    {
+      "year_month": "2008-04",
+      "rating_mean": 4.264,
+      "rating_std": 1.1440166928626465,
+      "count": 125,
+      "helpful_mean": 2.744
+    },
+    {
+      "year_month": "2008-05",
+      "rating_mean": 4.443478260869565,
+      "rating_std": 0.9476777188125671,
+      "count": 115,
+      "helpful_mean": 3.4434782608695653
+    },
+    {
+      "year_month": "2008-06",
+      "rating_mean": 4.46078431372549,
+      "rating_std": 0.9613477402955222,
+      "count": 102,
+      "helpful_mean": 3.264705882352941
+    },
+    {
+      "year_month": "2008-07",
+      "rating_mean": 4.233766233766234,
+      "rating_std": 1.0276708088689728,
+      "count": 154,
+      "helpful_mean": 3.155844155844156
+    },
+    {
+      "year_month": "2008-08",
+      "rating_mean": 4.5,
+      "rating_std": 0.8346143999364,
+      "count": 118,
+      "helpful_mean": 2.669491525423729
+    },
+    {
+      "year_month": "2008-09",
+      "rating_mean": 4.462962962962963,
+      "rating_std": 0.9513976528994285,
+      "count": 108,
+      "helpful_mean": 3.259259259259259
+    },
+    {
+      "year_month": "2008-10",
+      "rating_mean": 4.41747572815534,
+      "rating_std": 1.0712304803599273,
+      "count": 103,
+      "helpful_mean": 2.0970873786407767
+    },
+    {
+      "year_month": "2008-11",
+      "rating_mean": 4.370689655172414,
+      "rating_std": 1.0917092495061456,
+      "count": 116,
+      "helpful_mean": 1.7758620689655173
+    },
+    {
+      "year_month": "2008-12",
+      "rating_mean": 4.229050279329609,
+      "rating_std": 1.1841863905526637,
+      "count": 179,
+      "helpful_mean": 12.659217877094973
+    },
+    {
+      "year_month": "2009-01",
+      "rating_mean": 4.396341463414634,
+      "rating_std": 1.1437689416529329,
+      "count": 164,
+      "helpful_mean": 4.548780487804878
+    },
+    {
+      "year_month": "2009-02",
+      "rating_mean": 4.616,
+      "rating_std": 0.7597113203859613,
+      "count": 125,
+      "helpful_mean": 2.504
+    },
+    {
+      "year_month": "2009-03",
+      "rating_mean": 4.405797101449275,
+      "rating_std": 1.078236470139543,
+      "count": 138,
+      "helpful_mean": 2.86231884057971
+    },
+    {
+      "year_month": "2009-04",
+      "rating_mean": 4.4113924050632916,
+      "rating_std": 1.0774453557925898,
+      "count": 158,
+      "helpful_mean": 2.7025316455696204
+    },
+    {
+      "year_month": "2009-05",
+      "rating_mean": 4.563291139240507,
+      "rating_std": 0.8774132820765248,
+      "count": 158,
+      "helpful_mean": 2.2468354430379747
+    },
+    {
+      "year_month": "2009-06",
+      "rating_mean": 4.5,
+      "rating_std": 0.9803024573066309,
+      "count": 142,
+      "helpful_mean": 4.394366197183099
+    },
+    {
+      "year_month": "2009-07",
+      "rating_mean": 4.336065573770492,
+      "rating_std": 1.0803324843103992,
+      "count": 122,
+      "helpful_mean": 2.4672131147540983
+    },
+    {
+      "year_month": "2009-08",
+      "rating_mean": 4.492857142857143,
+      "rating_std": 0.9252371157990852,
+      "count": 140,
+      "helpful_mean": 2.607142857142857
+    },
+    {
+      "year_month": "2009-09",
+      "rating_mean": 4.392156862745098,
+      "rating_std": 0.9749176356415089,
+      "count": 153,
+      "helpful_mean": 2.5359477124183005
+    },
+    {
+      "year_month": "2009-10",
+      "rating_mean": 4.427672955974843,
+      "rating_std": 1.0154447768819845,
+      "count": 159,
+      "helpful_mean": 2.0817610062893084
+    },
+    {
+      "year_month": "2009-11",
+      "rating_mean": 4.512820512820513,
+      "rating_std": 0.9671186302599412,
+      "count": 156,
+      "helpful_mean": 3.0833333333333335
+    },
+    {
+      "year_month": "2009-12",
+      "rating_mean": 4.254143646408839,
+      "rating_std": 1.2567802607041214,
+      "count": 181,
+      "helpful_mean": 3.4972375690607733
+    },
+    {
+      "year_month": "2010-01",
+      "rating_mean": 4.520231213872832,
+      "rating_std": 0.8039842311287893,
+      "count": 173,
+      "helpful_mean": 2.3815028901734103
+    },
+    {
+      "year_month": "2010-02",
+      "rating_mean": 4.511904761904762,
+      "rating_std": 0.9848437989045071,
+      "count": 168,
+      "helpful_mean": 2.3035714285714284
+    },
+    {
+      "year_month": "2010-03",
+      "rating_mean": 4.563953488372093,
+      "rating_std": 0.9186072334169845,
+      "count": 172,
+      "helpful_mean": 2.5872093023255816
+    },
+    {
+      "year_month": "2010-04",
+      "rating_mean": 4.546583850931677,
+      "rating_std": 0.9483558836152058,
+      "count": 161,
+      "helpful_mean": 1.608695652173913
+    },
+    {
+      "year_month": "2010-05",
+      "rating_mean": 4.459627329192546,
+      "rating_std": 1.0547143500723062,
+      "count": 161,
+      "helpful_mean": 2.7577639751552794
+    },
+    {
+      "year_month": "2010-06",
+      "rating_mean": 4.620689655172414,
+      "rating_std": 0.8151935733854249,
+      "count": 174,
+      "helpful_mean": 2.2241379310344827
+    },
+    {
+      "year_month": "2010-07",
+      "rating_mean": 4.4581005586592175,
+      "rating_std": 1.0397594638377354,
+      "count": 179,
+      "helpful_mean": 3.9273743016759775
+    },
+    {
+      "year_month": "2010-08",
+      "rating_mean": 4.3271889400921655,
+      "rating_std": 1.150220561082253,
+      "count": 217,
+      "helpful_mean": 2.294930875576037
+    },
+    {
+      "year_month": "2010-09",
+      "rating_mean": 4.446078431372549,
+      "rating_std": 0.9735589647564373,
+      "count": 204,
+      "helpful_mean": 2.553921568627451
+    },
+    {
+      "year_month": "2010-10",
+      "rating_mean": 4.410138248847926,
+      "rating_std": 1.0595633618787546,
+      "count": 217,
+      "helpful_mean": 2.2903225806451615
+    },
+    {
+      "year_month": "2010-11",
+      "rating_mean": 4.491525423728813,
+      "rating_std": 1.061879207073343,
+      "count": 236,
+      "helpful_mean": 4.309322033898305
+    },
+    {
+      "year_month": "2010-12",
+      "rating_mean": 4.2664092664092665,
+      "rating_std": 1.3038668795562385,
+      "count": 259,
+      "helpful_mean": 2.2316602316602316
+    },
+    {
+      "year_month": "2011-01",
+      "rating_mean": 4.450331125827814,
+      "rating_std": 1.0702174258048707,
+      "count": 302,
+      "helpful_mean": 2.0695364238410594
+    },
+    {
+      "year_month": "2011-02",
+      "rating_mean": 4.084269662921348,
+      "rating_std": 1.2481307041150322,
+      "count": 178,
+      "helpful_mean": 2.3707865168539324
+    },
+    {
+      "year_month": "2011-03",
+      "rating_mean": 4.166666666666667,
+      "rating_std": 1.243112124682555,
+      "count": 240,
+      "helpful_mean": 2.4875
+    },
+    {
+      "year_month": "2011-04",
+      "rating_mean": 4.298076923076923,
+      "rating_std": 1.174444530578993,
+      "count": 208,
+      "helpful_mean": 2.6875
+    },
+    {
+      "year_month": "2011-05",
+      "rating_mean": 4.212389380530974,
+      "rating_std": 1.1734191440866082,
+      "count": 226,
+      "helpful_mean": 2.9911504424778763
+    },
+    {
+      "year_month": "2011-06",
+      "rating_mean": 4.306976744186047,
+      "rating_std": 1.11434892537931,
+      "count": 215,
+      "helpful_mean": 2.2790697674418605
+    },
+    {
+      "year_month": "2011-07",
+      "rating_mean": 4.315555555555555,
+      "rating_std": 1.1506899241704096,
+      "count": 225,
+      "helpful_mean": 2.8
+    },
+    {
+      "year_month": "2011-08",
+      "rating_mean": 4.346456692913386,
+      "rating_std": 1.084405833602473,
+      "count": 254,
+      "helpful_mean": 2.468503937007874
+    },
+    {
+      "year_month": "2011-09",
+      "rating_mean": 4.390510948905109,
+      "rating_std": 1.0847179010176367,
+      "count": 274,
+      "helpful_mean": 2.510948905109489
+    },
+    {
+      "year_month": "2011-10",
+      "rating_mean": 4.404081632653061,
+      "rating_std": 1.0460619327168403,
+      "count": 245,
+      "helpful_mean": 2.914285714285714
+    },
+    {
+      "year_month": "2011-11",
+      "rating_mean": 4.44206008583691,
+      "rating_std": 1.02441701494658,
+      "count": 233,
+      "helpful_mean": 1.7682403433476395
+    },
+    {
+      "year_month": "2011-12",
+      "rating_mean": 4.403409090909091,
+      "rating_std": 1.1230756369447634,
+      "count": 352,
+      "helpful_mean": 3.7926136363636362
+    },
+    {
+      "year_month": "2012-01",
+      "rating_mean": 4.711643090315561,
+      "rating_std": 0.8155524070750233,
+      "count": 919,
+      "helpful_mean": 0.7714907508161044
+    },
+    {
+      "year_month": "2012-02",
+      "rating_mean": 4.459074733096085,
+      "rating_std": 1.0786555113900644,
+      "count": 281,
+      "helpful_mean": 1.7402135231316727
+    },
+    {
+      "year_month": "2012-03",
+      "rating_mean": 4.330543933054393,
+      "rating_std": 1.1719534602439405,
+      "count": 239,
+      "helpful_mean": 2.2635983263598325
+    },
+    {
+      "year_month": "2012-04",
+      "rating_mean": 4.504201680672269,
+      "rating_std": 0.9535538641374743,
+      "count": 238,
+      "helpful_mean": 2.453781512605042
+    },
+    {
+      "year_month": "2012-05",
+      "rating_mean": 4.409420289855072,
+      "rating_std": 1.0526771191868627,
+      "count": 276,
+      "helpful_mean": 3.5072463768115942
+    },
+    {
+      "year_month": "2012-06",
+      "rating_mean": 4.621468926553672,
+      "rating_std": 0.9238373539421254,
+      "count": 354,
+      "helpful_mean": 1.5847457627118644
+    },
+    {
+      "year_month": "2012-07",
+      "rating_mean": 4.4185303514377,
+      "rating_std": 1.1154114509925583,
+      "count": 313,
+      "helpful_mean": 1.843450479233227
+    },
+    {
+      "year_month": "2012-08",
+      "rating_mean": 4.5369127516778525,
+      "rating_std": 1.0283751358193793,
+      "count": 298,
+      "helpful_mean": 1.936241610738255
+    },
+    {
+      "year_month": "2012-09",
+      "rating_mean": 4.228476821192053,
+      "rating_std": 1.3032480498843664,
+      "count": 302,
+      "helpful_mean": 2.251655629139073
+    },
+    {
+      "year_month": "2012-10",
+      "rating_mean": 4.53921568627451,
+      "rating_std": 0.9374353079576175,
+      "count": 306,
+      "helpful_mean": 2.1241830065359477
+    },
+    {
+      "year_month": "2012-11",
+      "rating_mean": 4.501113585746102,
+      "rating_std": 0.9685333204764053,
+      "count": 449,
+      "helpful_mean": 1.9064587973273943
+    },
+    {
+      "year_month": "2012-12",
+      "rating_mean": 4.422645739910314,
+      "rating_std": 1.1378906963645337,
+      "count": 892,
+      "helpful_mean": 2.6670403587443947
+    },
+    {
+      "year_month": "2013-01",
+      "rating_mean": 4.493989071038252,
+      "rating_std": 1.0691194253279035,
+      "count": 915,
+      "helpful_mean": 2.389071038251366
+    },
+    {
+      "year_month": "2013-02",
+      "rating_mean": 4.52023988005997,
+      "rating_std": 0.9698741146288069,
+      "count": 667,
+      "helpful_mean": 1.3793103448275863
+    },
+    {
+      "year_month": "2013-03",
+      "rating_mean": 4.506666666666667,
+      "rating_std": 0.9868742489631487,
+      "count": 750,
+      "helpful_mean": 1.532
+    },
+    {
+      "year_month": "2013-04",
+      "rating_mean": 4.5341426403641885,
+      "rating_std": 0.9404630808120674,
+      "count": 659,
+      "helpful_mean": 1.6009104704097117
+    },
+    {
+      "year_month": "2013-05",
+      "rating_mean": 4.488472622478386,
+      "rating_std": 0.9813614986457753,
+      "count": 694,
+      "helpful_mean": 1.5043227665706052
+    },
+    {
+      "year_month": "2013-06",
+      "rating_mean": 4.504,
+      "rating_std": 0.9824093877443384,
+      "count": 625,
+      "helpful_mean": 1.688
+    },
+    {
+      "year_month": "2013-07",
+      "rating_mean": 4.360808709175739,
+      "rating_std": 1.134486571585505,
+      "count": 643,
+      "helpful_mean": 1.427682737169518
+    },
+    {
+      "year_month": "2013-08",
+      "rating_mean": 4.4,
+      "rating_std": 1.125819647864644,
+      "count": 665,
+      "helpful_mean": 1.4917293233082707
+    },
+    {
+      "year_month": "2013-09",
+      "rating_mean": 4.481418918918919,
+      "rating_std": 1.0306599401337286,
+      "count": 592,
+      "helpful_mean": 1.947635135135135
+    },
+    {
+      "year_month": "2013-10",
+      "rating_mean": 4.537828947368421,
+      "rating_std": 0.9441835591809237,
+      "count": 608,
+      "helpful_mean": 1.824013157894737
+    },
+    {
+      "year_month": "2013-11",
+      "rating_mean": 4.406491499227203,
+      "rating_std": 1.1457910159240243,
+      "count": 647,
+      "helpful_mean": 1.5409582689335395
+    },
+    {
+      "year_month": "2013-12",
+      "rating_mean": 4.4201605709188225,
+      "rating_std": 1.1561575720189765,
+      "count": 1121,
+      "helpful_mean": 1.3782337198929526
+    },
+    {
+      "year_month": "2014-01",
+      "rating_mean": 4.579263711495116,
+      "rating_std": 0.9523961386104259,
+      "count": 1331,
+      "helpful_mean": 1.0608564988730278
+    },
+    {
+      "year_month": "2014-02",
+      "rating_mean": 4.55531453362256,
+      "rating_std": 0.9502722387144014,
+      "count": 922,
+      "helpful_mean": 1.1301518438177873
+    },
+    {
+      "year_month": "2014-03",
+      "rating_mean": 4.51668584579977,
+      "rating_std": 0.9889994334194716,
+      "count": 869,
+      "helpful_mean": 1.3693901035673188
+    },
+    {
+      "year_month": "2014-04",
+      "rating_mean": 4.48062015503876,
+      "rating_std": 1.0407041242158475,
+      "count": 774,
+      "helpful_mean": 1.5335917312661498
+    },
+    {
+      "year_month": "2014-05",
+      "rating_mean": 4.467549668874172,
+      "rating_std": 1.074144509939258,
+      "count": 755,
+      "helpful_mean": 1.4490066225165563
+    },
+    {
+      "year_month": "2014-06",
+      "rating_mean": 4.48046875,
+      "rating_std": 1.0587113216768178,
+      "count": 768,
+      "helpful_mean": 1.4322916666666667
+    },
+    {
+      "year_month": "2014-07",
+      "rating_mean": 4.505220883534137,
+      "rating_std": 0.9988804280450053,
+      "count": 1245,
+      "helpful_mean": 0.9887550200803212
+    },
+    {
+      "year_month": "2014-08",
+      "rating_mean": 4.185852981969487,
+      "rating_std": 1.4093450870828306,
+      "count": 1442,
+      "helpful_mean": 0.8529819694868238
+    },
+    {
+      "year_month": "2014-09",
+      "rating_mean": 4.582630691399663,
+      "rating_std": 0.9477498077526673,
+      "count": 1186,
+      "helpful_mean": 0.845699831365936
+    },
+    {
+      "year_month": "2014-10",
+      "rating_mean": 4.388082505729565,
+      "rating_std": 1.1914752269473292,
+      "count": 1309,
+      "helpful_mean": 0.732620320855615
+    },
+    {
+      "year_month": "2014-11",
+      "rating_mean": 4.524737631184408,
+      "rating_std": 1.0294550442103814,
+      "count": 1334,
+      "helpful_mean": 0.8425787106446777
+    },
+    {
+      "year_month": "2014-12",
+      "rating_mean": 4.544674406865219,
+      "rating_std": 1.0615636254150085,
+      "count": 1981,
+      "helpful_mean": 1.121150933871782
+    },
+    {
+      "year_month": "2015-01",
+      "rating_mean": 4.616413916146298,
+      "rating_std": 0.9361870619868657,
+      "count": 2242,
+      "helpful_mean": 0.5584299732381802
+    },
+    {
+      "year_month": "2015-02",
+      "rating_mean": 4.568939005638135,
+      "rating_std": 1.0037053668568614,
+      "count": 1951,
+      "helpful_mean": 0.6355715017939518
+    },
+    {
+      "year_month": "2015-03",
+      "rating_mean": 4.554269175108538,
+      "rating_std": 0.9976189601606181,
+      "count": 2073,
+      "helpful_mean": 0.769416304872166
+    },
+    {
+      "year_month": "2015-04",
+      "rating_mean": 4.572705601907032,
+      "rating_std": 0.9597225289004282,
+      "count": 1678,
+      "helpful_mean": 0.8307508939213349
+    },
+    {
+      "year_month": "2015-05",
+      "rating_mean": 4.574923547400612,
+      "rating_std": 0.9656182073175698,
+      "count": 1635,
+      "helpful_mean": 0.6801223241590214
+    },
+    {
+      "year_month": "2015-06",
+      "rating_mean": 4.517073170731707,
+      "rating_std": 1.061708579374058,
+      "count": 1640,
+      "helpful_mean": 0.8847560975609756
+    },
+    {
+      "year_month": "2015-07",
+      "rating_mean": 4.544093178036606,
+      "rating_std": 1.0091822032680446,
+      "count": 1803,
+      "helpful_mean": 0.9328896283971159
+    },
+    {
+      "year_month": "2015-08",
+      "rating_mean": 4.5722826086956525,
+      "rating_std": 0.9877956776229317,
+      "count": 1840,
+      "helpful_mean": 0.7402173913043478
+    },
+    {
+      "year_month": "2015-09",
+      "rating_mean": 4.542507645259938,
+      "rating_std": 1.0283007928599244,
+      "count": 1635,
+      "helpful_mean": 0.6501529051987768
+    },
+    {
+      "year_month": "2015-10",
+      "rating_mean": 4.490543735224587,
+      "rating_std": 1.0740883113734052,
+      "count": 1692,
+      "helpful_mean": 0.6832151300236406
+    },
+    {
+      "year_month": "2015-11",
+      "rating_mean": 4.46735990756788,
+      "rating_std": 1.0951563973029228,
+      "count": 1731,
+      "helpful_mean": 0.7469670710571924
+    },
+    {
+      "year_month": "2015-12",
+      "rating_mean": 4.4772727272727275,
+      "rating_std": 1.1334474783099864,
+      "count": 2024,
+      "helpful_mean": 0.9891304347826086
+    },
+    {
+      "year_month": "2016-01",
+      "rating_mean": 4.619524405506883,
+      "rating_std": 0.9549052468125304,
+      "count": 3196,
+      "helpful_mean": 0.654881101376721
+    },
+    {
+      "year_month": "2016-02",
+      "rating_mean": 4.570684821786143,
+      "rating_std": 0.9731520392046418,
+      "count": 2497,
+      "helpful_mean": 0.880656788145775
+    },
+    {
+      "year_month": "2016-03",
+      "rating_mean": 4.517047733654232,
+      "rating_std": 1.045230217892087,
+      "count": 2493,
+      "helpful_mean": 0.7027677496991577
+    },
+    {
+      "year_month": "2016-04",
+      "rating_mean": 4.469915464942814,
+      "rating_std": 1.102446371847864,
+      "count": 2011,
+      "helpful_mean": 0.8155146693187469
+    },
+    {
+      "year_month": "2016-05",
+      "rating_mean": 4.450847457627119,
+      "rating_std": 1.1103387705038108,
+      "count": 2360,
+      "helpful_mean": 0.6877118644067797
+    },
+    {
+      "year_month": "2016-06",
+      "rating_mean": 4.520348837209302,
+      "rating_std": 1.0663495357312613,
+      "count": 2408,
+      "helpful_mean": 0.8264119601328903
+    },
+    {
+      "year_month": "2016-07",
+      "rating_mean": 4.455400981996727,
+      "rating_std": 1.1261304334701796,
+      "count": 2444,
+      "helpful_mean": 0.7103109656301145
+    },
+    {
+      "year_month": "2016-08",
+      "rating_mean": 4.493317610062893,
+      "rating_std": 1.075938241004103,
+      "count": 2544,
+      "helpful_mean": 0.8372641509433962
+    },
+    {
+      "year_month": "2016-09",
+      "rating_mean": 4.489166666666667,
+      "rating_std": 1.0868339994136662,
+      "count": 2400,
+      "helpful_mean": 0.7783333333333333
+    },
+    {
+      "year_month": "2016-10",
+      "rating_mean": 4.50354314297624,
+      "rating_std": 1.0598676257857789,
+      "count": 2399,
+      "helpful_mean": 0.8649437265527303
+    },
+    {
+      "year_month": "2016-11",
+      "rating_mean": 4.418981481481482,
+      "rating_std": 1.1541298178826442,
+      "count": 2160,
+      "helpful_mean": 0.9069444444444444
+    },
+    {
+      "year_month": "2016-12",
+      "rating_mean": 4.576719576719577,
+      "rating_std": 1.0233315943718266,
+      "count": 4347,
+      "helpful_mean": 0.905682079595123
+    },
+    {
+      "year_month": "2017-01",
+      "rating_mean": 4.638201806046329,
+      "rating_std": 0.9339260849608552,
+      "count": 5094,
+      "helpful_mean": 0.4903808402041618
+    },
+    {
+      "year_month": "2017-02",
+      "rating_mean": 4.535277177825774,
+      "rating_std": 1.0505829162975344,
+      "count": 2778,
+      "helpful_mean": 0.7253419726421886
+    },
+    {
+      "year_month": "2017-03",
+      "rating_mean": 4.485299326957138,
+      "rating_std": 1.085165078067825,
+      "count": 2823,
+      "helpful_mean": 0.7885228480340064
+    },
+    {
+      "year_month": "2017-04",
+      "rating_mean": 4.451735817104149,
+      "rating_std": 1.1213907009854398,
+      "count": 2362,
+      "helpful_mean": 0.8806096528365792
+    },
+    {
+      "year_month": "2017-05",
+      "rating_mean": 4.452907452907453,
+      "rating_std": 1.1483711916125683,
+      "count": 2442,
+      "helpful_mean": 1.063063063063063
+    },
+    {
+      "year_month": "2017-06",
+      "rating_mean": 4.458943630714603,
+      "rating_std": 1.1209003228107404,
+      "count": 2253,
+      "helpful_mean": 0.8672880603639591
+    },
+    {
+      "year_month": "2017-07",
+      "rating_mean": 4.387586206896552,
+      "rating_std": 1.1937942933759829,
+      "count": 2175,
+      "helpful_mean": 1.1255172413793104
+    },
+    {
+      "year_month": "2017-08",
+      "rating_mean": 4.4106180008295315,
+      "rating_std": 1.1782059959760196,
+      "count": 2411,
+      "helpful_mean": 0.861053504769805
+    },
+    {
+      "year_month": "2017-09",
+      "rating_mean": 4.462787550744249,
+      "rating_std": 1.1198850776151827,
+      "count": 2217,
+      "helpful_mean": 1.243572395128552
+    },
+    {
+      "year_month": "2017-10",
+      "rating_mean": 4.401612138454244,
+      "rating_std": 1.1612894665860172,
+      "count": 2109,
+      "helpful_mean": 1.0284495021337126
+    },
+    {
+      "year_month": "2017-11",
+      "rating_mean": 4.318889970788705,
+      "rating_std": 1.262082775364631,
+      "count": 2054,
+      "helpful_mean": 1.2473222979552094
+    },
+    {
+      "year_month": "2017-12",
+      "rating_mean": 4.386379430159833,
+      "rating_std": 1.2473602399398998,
+      "count": 2878,
+      "helpful_mean": 2.073314801945796
+    },
+    {
+      "year_month": "2018-01",
+      "rating_mean": 4.529918864097363,
+      "rating_std": 1.0827386555420715,
+      "count": 3944,
+      "helpful_mean": 0.9490365111561866
+    },
+    {
+      "year_month": "2018-02",
+      "rating_mean": 4.501217391304348,
+      "rating_std": 1.0992414888349469,
+      "count": 2875,
+      "helpful_mean": 0.5979130434782609
+    },
+    {
+      "year_month": "2018-03",
+      "rating_mean": 4.449480968858132,
+      "rating_std": 1.1367434222284616,
+      "count": 2890,
+      "helpful_mean": 0.9813148788927336
+    },
+    {
+      "year_month": "2018-04",
+      "rating_mean": 4.38236457097667,
+      "rating_std": 1.1942063230595596,
+      "count": 2529,
+      "helpful_mean": 0.693950177935943
+    },
+    {
+      "year_month": "2018-05",
+      "rating_mean": 4.318714719930526,
+      "rating_std": 1.2605873776688585,
+      "count": 2303,
+      "helpful_mean": 1.16804168475901
+    },
+    {
+      "year_month": "2018-06",
+      "rating_mean": 4.400414078674948,
+      "rating_std": 1.1999377893846237,
+      "count": 2415,
+      "helpful_mean": 0.8211180124223603
+    },
+    {
+      "year_month": "2018-07",
+      "rating_mean": 4.385612714345462,
+      "rating_std": 1.2001508059656623,
+      "count": 2391,
+      "helpful_mean": 0.5775826014219991
+    },
+    {
+      "year_month": "2018-08",
+      "rating_mean": 4.376525031552377,
+      "rating_std": 1.240114122714988,
+      "count": 2377,
+      "helpful_mean": 1.2111905763567523
+    },
+    {
+      "year_month": "2018-09",
+      "rating_mean": 4.3619047619047615,
+      "rating_std": 1.251055501409204,
+      "count": 1785,
+      "helpful_mean": 0.8957983193277311
+    },
+    {
+      "year_month": "2018-10",
+      "rating_mean": 4.390400791687283,
+      "rating_std": 1.2237286341258728,
+      "count": 2021,
+      "helpful_mean": 0.9500247402276101
+    },
+    {
+      "year_month": "2018-11",
+      "rating_mean": 4.3639313861845155,
+      "rating_std": 1.2575032434009077,
+      "count": 2157,
+      "helpful_mean": 1.1956420955030134
+    },
+    {
+      "year_month": "2018-12",
+      "rating_mean": 4.354098360655738,
+      "rating_std": 1.3135292096422002,
+      "count": 3660,
+      "helpful_mean": 1.1688524590163933
+    },
+    {
+      "year_month": "2019-01",
+      "rating_mean": 4.568699654775604,
+      "rating_std": 1.0652884980301511,
+      "count": 4345,
+      "helpful_mean": 0.6690448791714615
+    },
+    {
+      "year_month": "2019-02",
+      "rating_mean": 4.432295719844358,
+      "rating_std": 1.2008689366042817,
+      "count": 2570,
+      "helpful_mean": 0.6147859922178989
+    },
+    {
+      "year_month": "2019-03",
+      "rating_mean": 4.432924563359346,
+      "rating_std": 1.2060323723494246,
+      "count": 2691,
+      "helpful_mean": 1.0193236714975846
+    },
+    {
+      "year_month": "2019-04",
+      "rating_mean": 4.380483804838049,
+      "rating_std": 1.2170027042203695,
+      "count": 2439,
+      "helpful_mean": 0.7298072980729807
+    },
+    {
+      "year_month": "2019-05",
+      "rating_mean": 4.368164794007491,
+      "rating_std": 1.2578854325882227,
+      "count": 2670,
+      "helpful_mean": 0.7074906367041198
+    },
+    {
+      "year_month": "2019-06",
+      "rating_mean": 4.41405987218298,
+      "rating_std": 1.2074929113678536,
+      "count": 2973,
+      "helpful_mean": 0.7615203498150017
+    },
+    {
+      "year_month": "2019-07",
+      "rating_mean": 4.430338733431517,
+      "rating_std": 1.2032997147155213,
+      "count": 3395,
+      "helpful_mean": 0.7266568483063328
+    },
+    {
+      "year_month": "2019-08",
+      "rating_mean": 4.389192886456908,
+      "rating_std": 1.2331794718207723,
+      "count": 2924,
+      "helpful_mean": 0.8683310533515732
+    },
+    {
+      "year_month": "2019-09",
+      "rating_mean": 4.310975609756097,
+      "rating_std": 1.292850203194081,
+      "count": 2624,
+      "helpful_mean": 0.7084603658536586
+    },
+    {
+      "year_month": "2019-10",
+      "rating_mean": 4.358662613981763,
+      "rating_std": 1.2648843948241115,
+      "count": 2632,
+      "helpful_mean": 2.1645136778115504
+    },
+    {
+      "year_month": "2019-11",
+      "rating_mean": 4.36234458259325,
+      "rating_std": 1.257869122132048,
+      "count": 2815,
+      "helpful_mean": 0.7023090586145648
+    },
+    {
+      "year_month": "2019-12",
+      "rating_mean": 4.361296859169199,
+      "rating_std": 1.289853743409768,
+      "count": 4935,
+      "helpful_mean": 0.6196555217831814
+    },
+    {
+      "year_month": "2020-01",
+      "rating_mean": 4.499287495546847,
+      "rating_std": 1.1410030523334278,
+      "count": 5614,
+      "helpful_mean": 0.4926968293551835
+    },
+    {
+      "year_month": "2020-02",
+      "rating_mean": 4.450424178154825,
+      "rating_std": 1.1908483035763726,
+      "count": 3772,
+      "helpful_mean": 0.5829798515376459
+    },
+    {
+      "year_month": "2020-03",
+      "rating_mean": 4.306379155435759,
+      "rating_std": 1.3056574246557044,
+      "count": 2226,
+      "helpful_mean": 0.6455525606469003
+    },
+    {
+      "year_month": "2020-04",
+      "rating_mean": 4.181818181818182,
+      "rating_std": 1.3944899686721566,
+      "count": 1793,
+      "helpful_mean": 1.1009481316229783
+    },
+    {
+      "year_month": "2020-05",
+      "rating_mean": 4.093062605752961,
+      "rating_std": 1.4618185050907633,
+      "count": 2364,
+      "helpful_mean": 0.6861252115059222
+    },
+    {
+      "year_month": "2020-06",
+      "rating_mean": 4.090263267864605,
+      "rating_std": 1.4536459660249657,
+      "count": 2393,
+      "helpful_mean": 0.7960718763058922
+    },
+    {
+      "year_month": "2020-07",
+      "rating_mean": 4.2033779028852924,
+      "rating_std": 1.353219474769807,
+      "count": 2842,
+      "helpful_mean": 0.6928219563687544
+    },
+    {
+      "year_month": "2020-08",
+      "rating_mean": 4.277271192164809,
+      "rating_std": 1.2925671543055008,
+      "count": 2961,
+      "helpful_mean": 0.6453900709219859
+    },
+    {
+      "year_month": "2020-09",
+      "rating_mean": 4.268901303538175,
+      "rating_std": 1.2979769393900307,
+      "count": 2685,
+      "helpful_mean": 0.5988826815642458
+    },
+    {
+      "year_month": "2020-10",
+      "rating_mean": 4.226893676164003,
+      "rating_std": 1.3351792613265732,
+      "count": 2878,
+      "helpful_mean": 0.7091730368311328
+    },
+    {
+      "year_month": "2020-11",
+      "rating_mean": 4.186587908269631,
+      "rating_std": 1.3632551025184718,
+      "count": 2878,
+      "helpful_mean": 0.5799166087560806
+    },
+    {
+      "year_month": "2020-12",
+      "rating_mean": 4.236266531027467,
+      "rating_std": 1.3606293522517354,
+      "count": 3932,
+      "helpful_mean": 0.5368769074262462
+    },
+    {
+      "year_month": "2021-01",
+      "rating_mean": 4.350599411897761,
+      "rating_std": 1.2837807314397398,
+      "count": 4421,
+      "helpful_mean": 0.44288622483601
+    },
+    {
+      "year_month": "2021-02",
+      "rating_mean": 4.337951643575115,
+      "rating_std": 1.2785424100905503,
+      "count": 3681,
+      "helpful_mean": 0.4126596033686498
+    },
+    {
+      "year_month": "2021-03",
+      "rating_mean": 4.306172171088251,
+      "rating_std": 1.300785997728732,
+      "count": 3694,
+      "helpful_mean": 0.37384948565240933
+    },
+    {
+      "year_month": "2021-04",
+      "rating_mean": 4.3013814491119255,
+      "rating_std": 1.310380185216509,
+      "count": 3547,
+      "helpful_mean": 0.40879616577389344
+    },
+    {
+      "year_month": "2021-05",
+      "rating_mean": 4.168169101647497,
+      "rating_std": 1.4144356718858615,
+      "count": 3217,
+      "helpful_mean": 1.5645010879701586
+    },
+    {
+      "year_month": "2021-06",
+      "rating_mean": 4.231363231363232,
+      "rating_std": 1.3686030413669963,
+      "count": 3367,
+      "helpful_mean": 0.44163944163944163
+    },
+    {
+      "year_month": "2021-07",
+      "rating_mean": 4.219543555126969,
+      "rating_std": 1.3619840539798065,
+      "count": 3111,
+      "helpful_mean": 0.5416264866602378
+    },
+    {
+      "year_month": "2021-08",
+      "rating_mean": 4.097677847401401,
+      "rating_std": 1.4720998400082441,
+      "count": 2713,
+      "helpful_mean": 0.7703649096940656
+    },
+    {
+      "year_month": "2021-09",
+      "rating_mean": 4.085002225189141,
+      "rating_std": 1.4726301690736636,
+      "count": 2247,
+      "helpful_mean": 0.5500667556742324
+    },
+    {
+      "year_month": "2021-10",
+      "rating_mean": 4.108563406644829,
+      "rating_std": 1.4379834783204108,
+      "count": 2137,
+      "helpful_mean": 0.470285446888161
+    },
+    {
+      "year_month": "2021-11",
+      "rating_mean": 4.105105105105105,
+      "rating_std": 1.4560714887100537,
+      "count": 1998,
+      "helpful_mean": 0.38238238238238237
+    },
+    {
+      "year_month": "2021-12",
+      "rating_mean": 4.10482374768089,
+      "rating_std": 1.4918548573553787,
+      "count": 3234,
+      "helpful_mean": 0.3515769944341373
+    },
+    {
+      "year_month": "2022-01",
+      "rating_mean": 4.3724673882875384,
+      "rating_std": 1.296660893942846,
+      "count": 3603,
+      "helpful_mean": 0.3444351928948099
+    },
+    {
+      "year_month": "2022-02",
+      "rating_mean": 4.11577868852459,
+      "rating_std": 1.4752066837606574,
+      "count": 1952,
+      "helpful_mean": 0.46311475409836067
+    },
+    {
+      "year_month": "2022-03",
+      "rating_mean": 4.156419529837251,
+      "rating_std": 1.42375638524969,
+      "count": 2212,
+      "helpful_mean": 0.36754068716094035
+    },
+    {
+      "year_month": "2022-04",
+      "rating_mean": 4.135665076841548,
+      "rating_std": 1.4411888540387765,
+      "count": 1887,
+      "helpful_mean": 0.5246422893481717
+    },
+    {
+      "year_month": "2022-05",
+      "rating_mean": 4.141039236479322,
+      "rating_std": 1.4406901461221358,
+      "count": 1886,
+      "helpful_mean": 0.355779427359491
+    },
+    {
+      "year_month": "2022-06",
+      "rating_mean": 4.186643835616438,
+      "rating_std": 1.4270711132128047,
+      "count": 1752,
+      "helpful_mean": 0.4349315068493151
+    },
+    {
+      "year_month": "2022-07",
+      "rating_mean": 4.1968884120171674,
+      "rating_std": 1.405216482136894,
+      "count": 1864,
+      "helpful_mean": 0.44957081545064376
+    },
+    {
+      "year_month": "2022-08",
+      "rating_mean": 4.201143946615825,
+      "rating_std": 1.3840699478935143,
+      "count": 2098,
+      "helpful_mean": 0.5481410867492851
+    },
+    {
+      "year_month": "2022-09",
+      "rating_mean": 4.28231884057971,
+      "rating_std": 1.3146309294430534,
+      "count": 1725,
+      "helpful_mean": 0.6701449275362319
+    },
+    {
+      "year_month": "2022-10",
+      "rating_mean": 4.27928447778419,
+      "rating_std": 1.3440542045700523,
+      "count": 1733,
+      "helpful_mean": 0.4396999422965955
+    },
+    {
+      "year_month": "2022-11",
+      "rating_mean": 4.272573363431151,
+      "rating_std": 1.3516092559332038,
+      "count": 1772,
+      "helpful_mean": 0.5265237020316027
+    },
+    {
+      "year_month": "2022-12",
+      "rating_mean": 4.267580872011251,
+      "rating_std": 1.40063938924277,
+      "count": 2844,
+      "helpful_mean": 0.4880450070323488
+    },
+    {
+      "year_month": "2023-01",
+      "rating_mean": 4.437732028349646,
+      "rating_std": 1.2520424312184497,
+      "count": 2963,
+      "helpful_mean": 0.3300708741140736
+    },
+    {
+      "year_month": "2023-02",
+      "rating_mean": 4.2749391727493915,
+      "rating_std": 1.3713278844673722,
+      "count": 1644,
+      "helpful_mean": 0.2761557177615572
+    },
+    {
+      "year_month": "2023-03",
+      "rating_mean": 4.308729139922979,
+      "rating_std": 1.3281453218499324,
+      "count": 1558,
+      "helpful_mean": 0.20218228498074453
+    },
+    {
+      "year_month": "2023-04",
+      "rating_mean": 4.443447037701975,
+      "rating_std": 1.2733210003537005,
+      "count": 557,
+      "helpful_mean": 0.13285457809694792
+    },
+    {
+      "year_month": "2023-05",
+      "rating_mean": 4.239057239057239,
+      "rating_std": 1.4496352477234926,
+      "count": 297,
+      "helpful_mean": 0.24579124579124578
+    },
+    {
+      "year_month": "2023-06",
+      "rating_mean": 4.418918918918919,
+      "rating_std": 1.335101787316901,
+      "count": 148,
+      "helpful_mean": 0.1891891891891892
+    },
+    {
+      "year_month": "2023-07",
+      "rating_mean": 4.5394736842105265,
+      "rating_std": 1.189810931317672,
+      "count": 152,
+      "helpful_mean": 0.17763157894736842
+    },
+    {
+      "year_month": "2023-08",
+      "rating_mean": 4.273584905660377,
+      "rating_std": 1.4640649144333568,
+      "count": 106,
+      "helpful_mean": 0.3490566037735849
+    },
+    {
+      "year_month": "2023-09",
+      "rating_mean": 3.0,
+      "rating_std": 2.8284271247461903,
+      "count": 2,
+      "helpful_mean": 0.0
+    }
+  ]
+}

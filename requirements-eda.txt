@@ -1,0 +1,44 @@
+# Amazon Reviews 2023 - Multi-Domain EDA
+# Python Package Requirements (Production)
+# Version: 3.6
+
+# Core Data Science
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.13.0
+
+# Visualization
+matplotlib>=3.9.0
+seaborn>=0.13.0
+plotly>=5.18.0
+squarify>=0.4.3              # Treemap visualizations
+wordcloud>=1.9.3             # Text analysis
+missingno>=0.5.2             # Missing data visualization
+
+# HuggingFace Integration
+huggingface_hub>=0.20.0      # Dataset loading
+datasets>=2.16.0             # Optional: if using load_dataset
+
+# Profiling & Analysis
+ydata-profiling>=4.6.0       # Automated EDA reports
+
+# Jupyter Environment
+jupyter>=1.0.0
+notebook>=7.0.0
+ipywidgets>=8.1.0            # Interactive widgets
+
+# Utilities
+tqdm>=4.66.0                 # Progress bars
+python-dateutil>=2.8.0
+pytz>=2024.1
+
+# Optional: Fairness Analysis (for Section 11)
+fairlearn>=0.9.0             # Demographic fairness metrics
+
+# Optional: Advanced Analysis
+scikit-learn>=1.4.0          # ML algorithms (clustering, PCA)
+statsmodels>=0.14.0          # Statistical models (ARIMA, etc.)
+
+# Optional: NLP Tools
+# nltk>=3.8.0                # Natural language toolkit
+# textblob>=0.17.1           # Sentiment analysis

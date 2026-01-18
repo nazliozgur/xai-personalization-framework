@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-01-18T15:35:46.978195",
+  "data_quality": {
+    "overall_score": 99.84533333333333,
+    "completeness_score": 100.0,
+    "uniqueness_score": 99.38133333333333,
+    "validity_score": 100.0,
+    "consistency_score": 100.0
+  },
+  "missing_values": {
+    "columns_with_missing": 0,
+    "total_missing_pct": 0.0,
+    "details": []
+  },
+  "duplicates": {
+    "count": 1856,
+    "percentage": 0.6186666666666667
+  },
+  "outliers": {
+    "columns_with_outliers": 2,
+    "details": [
+      {
+        "Column": "rating",
+        "Outlier_Count": "33272",
+        "Outlier_Percentage": 11.090666666666667,
+        "Lower_Bound": 2.5,
+        "Upper_Bound": 6.5
+      },
+      {
+        "Column": "helpful_vote",
+        "Outlier_Count": "22476",
+        "Outlier_Percentage": 7.492,
+        "Lower_Bound": -1.5,
+        "Upper_Bound": 2.5
+      }
+    ]
+  },
+  "nist_compliance": {
+    "principle": "NIST IR 8312 Principle 4 - Knowledge Limits",
+    "status": "Quality baseline established"
+  }
+}

@@ -706,3 +706,6 @@ mlartifacts/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Archive (old work preserved locally)
+archive/

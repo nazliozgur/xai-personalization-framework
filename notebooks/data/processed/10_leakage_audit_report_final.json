@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-01-11T23:22:00.290436",
+  "target_column": "rating",
+  "leakage_threshold": 0.9,
+  "suspicious_features": {},
+  "temporal_suspects": [],
+  "mitigation_status": "Identified - to be addressed in Feature Engineering"
+}

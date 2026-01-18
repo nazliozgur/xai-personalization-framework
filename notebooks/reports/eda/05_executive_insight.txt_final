@@ -1,0 +1,24 @@
+
+KEY INSIGHT FOR EXECUTIVES:
+
+High-cardinality features (e.g., 264,600+ categories in 'text') 
+make AI explanations complex and difficult to interpret.
+
+EXAMPLE:
+BAD: "This recommendation is driven by brand #1847 (0.02% of data)"
+GOOD: "This recommendation is driven by 'Premium Brands' category"
+
+OUR APPROACH:
+We strategically group rare categories using the Pareto principle (80/20 rule):
+- Keep top categories representing 80% of data
+- Group remaining 20% as "Other"
+- Result: 25% interpretability score
+
+BUSINESS IMPACT:
+* Executives can understand model decisions
+* Regulators can audit explanations (EU AI Act compliance)
+* Model remains accurate while being explainable
+
+NIST PRINCIPLE 2 COMPLIANCE:
+High cardinality violates "Meaningful" explanations requirement.
+Our mitigation ensures explanations remain interpretable.
