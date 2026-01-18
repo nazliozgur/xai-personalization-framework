@@ -1,4 +1,4 @@
-# XAE-Frame: Explainable, Adaptive & Ethical AI Framework for Cross-Domain Personalization
+# XAE-Frame: Explainable, Adaptive & Ethical AI Framework for Domain-Agnostic Personalization
 
 [![Version](https://img.shields.io/badge/version-3.6-blue.svg)](https://github.com/nazliozgur/xai-personalization-framework)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
