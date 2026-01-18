@@ -1,0 +1,32 @@
+{
+  "Feature Scaling (StandardScaler, MinMaxScaler)": {
+    "correct": "Fit on TRAIN only \u2192 Transform both train & test",
+    "incorrect": "Fit on ALL data (train + test) \u2192 CONTAMINATION!",
+    "example": "scaler.fit(X_train) \u2192 scaler.transform(X_test)",
+    "status": "TO BE VERIFIED in Feature Engineering"
+  },
+  "Missing Value Imputation (SimpleImputer)": {
+    "correct": "Calculate mean/median on TRAIN only",
+    "incorrect": "Use global mean (includes test set)",
+    "example": "imputer.fit(X_train) \u2192 imputer.transform(X_test)",
+    "status": "TO BE VERIFIED"
+  },
+  "Categorical Encoding (One-Hot, Label Encoding)": {
+    "correct": "Categories from TRAIN only",
+    "incorrect": "Categories from full dataset",
+    "example": "encoder.fit(X_train) \u2192 encoder.transform(X_test)",
+    "status": "TO BE VERIFIED"
+  },
+  "Feature Engineering (Aggregations, Statistics)": {
+    "correct": "Compute statistics on TRAIN only",
+    "incorrect": "Use statistics from all data",
+    "example": "mean_rating_train \u2192 apply to test",
+    "status": "TO BE VERIFIED"
+  },
+  "Target Encoding": {
+    "correct": "Mean target per category from TRAIN only",
+    "incorrect": "Mean target from full dataset",
+    "example": "Use CV or leave-one-out within train",
+    "status": "TO BE VERIFIED"
+  }
+}

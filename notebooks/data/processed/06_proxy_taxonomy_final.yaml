@@ -1,0 +1,61 @@
+features:
+  asin:
+    description: Immutable attribute
+    gaming_risk: NONE
+    manipulable: false
+    type: Causal
+  domain:
+    description: Needs manual review
+    gaming_risk: MEDIUM
+    manipulable: null
+    type: Unknown
+  helpful_vote:
+    description: Can be artificially inflated
+    gaming_risk: HIGH
+    manipulable: true
+    type: Proxy
+  images:
+    description: Immutable attribute
+    gaming_risk: NONE
+    manipulable: false
+    type: Causal
+  parent_asin:
+    description: Immutable attribute
+    gaming_risk: NONE
+    manipulable: false
+    type: Causal
+  rating:
+    description: Needs manual review
+    gaming_risk: MEDIUM
+    manipulable: null
+    type: Unknown
+  text:
+    description: Needs manual review
+    gaming_risk: MEDIUM
+    manipulable: null
+    type: Unknown
+  timestamp:
+    description: Immutable attribute
+    gaming_risk: NONE
+    manipulable: false
+    type: Causal
+  title:
+    description: Needs manual review
+    gaming_risk: MEDIUM
+    manipulable: null
+    type: Unknown
+  user_id:
+    description: Immutable attribute
+    gaming_risk: NONE
+    manipulable: false
+    type: Causal
+  verified_purchase:
+    description: User can legitimately improve
+    gaming_risk: MEDIUM
+    manipulable: true
+    type: Actionable
+  year_month:
+    description: Needs manual review
+    gaming_risk: MEDIUM
+    manipulable: null
+    type: Unknown

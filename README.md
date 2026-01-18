@@ -476,7 +476,7 @@ The framework uses the [Amazon Reviews 2023](https://amazon-reviews-2023.github.
 - **Skew Prevention**: Integration with the Feature Store to ensure that raw Amazon metadata is transformed identically during both training and real-time inference (Google Rule #32)
 
 **Selected domains for development:**
-- **E-Commerce (Primary Demo)**: All_Beauty (701K reviews), Electronics (43.9M reviews)
+- **E-Commerce (Primary Demo)**: All_Beauty (701K reviews), Gift_Cards (152K reviews), Digital_Music (130K reviews)
 - **Finance (Adaptation)**: Synthetic credit card transactions + Kaggle financial datasets, mapped to the core XAE-Frame schema
 - **Insurance (Adaptation)**: Synthetic policy data + Kaggle safe driver prediction, utilized for risk-based explanation testing
 
@@ -529,7 +529,14 @@ chmod +x update_structure_v36_ENHANCED.sh
 ./update_structure_v36_ENHANCED.sh
 
 # Download dataset (Amazon Reviews 2023 - subset)
-python scripts/download_data.py --dataset amazon_reviews --category All_Beauty --sample-size 10000
+  # Download All_Beauty
+python scripts/download_data.py --dataset amazon_reviews --category All_Beauty --sample-size 100000
+
+  # Download Gift_Cards
+python scripts/download_data.py --dataset amazon_reviews --category Gift_Cards --sample-size 100000
+
+  # Download Digital_Music
+python scripts/download_data.py --dataset amazon_reviews --category Digital_Music --sample-size 100000
 
 # Initialize database and feature store metadata
 python scripts/init_db.py
@@ -834,7 +841,8 @@ XAE-Frame v3.6 leverages its Dual-Layer XAI and Proxy-Aware architecture to prov
 **Insurance**
 - *Risk Transparency*: Policy recommendations with risk factor explanations and fair pricing across demographic groups.
 - *v3.6 Innovation*: Google ML Rule #32 Monitoring ensures that real-time claim predictions are statistically consistent with historical actuarial data, preventing "silent failures" in risk assessment.
-- *Cross-Domain Insight*: Coverage suggestions informed by purchasing behavior in adjacent domains (e.g., a high-end electronics purchase in e-commerce triggering a relevant gadget insurance offer).
+- *Cross-Domain Insight*: Coverage suggestions informed by purchasing behavior across diverse domains 
+(e.g., gift card purchasing patterns revealing seasonal trends, or music preferences indicating entertainment consumption behavior)
 
 ---
 

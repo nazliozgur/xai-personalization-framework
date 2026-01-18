@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "project": "XAE-Frame v3.6",
+    "researcher": "Nazl\u0131 \u00d6zg\u00fcr",
+    "institution": "Istanbul University - MIS",
+    "date": "2026-01-18T15:35:08.434975",
+    "random_seed": 42,
+    "python_version": "3.13.1",
+    "pandas_version": "2.2.3",
+    "numpy_version": "2.2.1"
+  },
+  "domains": [
+    "All_Beauty",
+    "Gift_Cards",
+    "Digital_Music"
+  ],
+  "domain_colors": {
+    "All_Beauty": "#E69F00",
+    "Gift_Cards": "#56B4E9",
+    "Digital_Music": "#009E73"
+  },
+  "columns": {
+    "user": "user_id",
+    "item": "asin",
+    "rating": "rating",
+    "timestamp": "timestamp",
+    "verified": "verified_purchase",
+    "helpful": "helpful_vote"
+  },
+  "publication": {
+    "figure_dpi": 300,
+    "figure_size": [
+      12,
+      6
+    ],
+    "font_size": 11
+  }
+}

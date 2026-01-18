@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-01-18T15:35:52.074892",
+  "analysis": {
+    "total_categorical_features": 7,
+    "cardinality_breakdown": {
+      "low": 1,
+      "medium": 0,
+      "high": 0,
+      "very_high": 5
+    },
+    "interpretability_score": 25.0,
+    "problematic_features": 5
+  },
+  "features": [
+    {
+      "Feature": "text",
+      "Unique_Count": 264600,
+      "Cardinality_Category": "Very High",
+      "XAI_Impact": "XAI challenging",
+      "Recommended_Action": "Embedding or target encoding",
+      "Rare_Categories": 264600,
+      "Rare_Percentage": 100.0,
+      "Color": "red"
+    },
+    {
+      "Feature": "user_id",
+      "Unique_Count": 243599,
+      "Cardinality_Category": "Very High",
+      "XAI_Impact": "XAI challenging",
+      "Recommended_Action": "Embedding or target encoding",
+      "Rare_Categories": 243599,
+      "Rare_Percentage": 100.0,
+      "Color": "red"
+    },
+    {
+      "Feature": "title",
+      "Unique_Count": 172456,
+      "Cardinality_Category": "Very High",
+      "XAI_Impact": "XAI challenging",
+      "Recommended_Action": "Embedding or target encoding",
+      "Rare_Categories": 172454,
+      "Rare_Percentage": 85.86566666666667,
+      "Color": "red"
+    },
+    {
+      "Feature": "asin",
+      "Unique_Count": 100104,
+      "Cardinality_Category": "Very High",
+      "XAI_Impact": "XAI challenging",
+      "Recommended_Action": "Embedding or target encoding",
+      "Rare_Categories": 100102,
+      "Rare_Percentage": 90.48566666666666,
+      "Color": "red"
+    },
+    {
+      "Feature": "parent_asin",
+      "Unique_Count": 98327,
+      "Cardinality_Category": "Very High",
+      "XAI_Impact": "XAI challenging",
+      "Recommended_Action": "Embedding or target encoding",
+      "Rare_Categories": 98321,
+      "Rare_Percentage": 83.07866666666666,
+      "Color": "red"
+    },
+    {
+      "Feature": "domain",
+      "Unique_Count": 3,
+      "Cardinality_Category": "Low",
+      "XAI_Impact": "Excellent for XAI",
+      "Recommended_Action": "Use as-is",
+      "Rare_Categories": 0,
+      "Rare_Percentage": 0.0,
+      "Color": "green"
+    }
+  ],
+  "executive_summary": {
+    "insight": "Strategic grouping preserves interpretability",
+    "compliance": "NIST Principle 2 (Meaningful explanations)",
+    "recommendation": "Group rare categories to achieve 25% interpretability"
+  }
+}

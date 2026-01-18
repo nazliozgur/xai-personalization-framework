@@ -1,0 +1,54 @@
+# Amazon Reviews 2023 - Multi-Domain EDA
+# Python Package Requirements (Development)
+# Version: 3.6
+
+# Include all production dependencies
+-r requirements-eda.txt
+
+# Development Tools
+ipython>=8.14.0              # Enhanced Python shell
+jupyterlab>=4.0.3            # JupyterLab interface
+voila>=0.5.0                 # Convert notebooks to dashboards
+
+# Code Quality
+black>=24.0.0                # Code formatting
+flake8>=6.0.0                # Linting
+pylint>=2.17.4               # Static analysis
+mypy>=1.4.1                  # Type checking
+isort>=5.12.0                # Import sorting
+
+# Testing
+pytest>=8.0.0                # Testing framework
+pytest-cov>=4.1.0            # Coverage reports
+pytest-mock>=3.11.1          # Mocking
+hypothesis>=6.82.0           # Property-based testing
+
+# Documentation
+sphinx>=7.1.0                # Documentation generator
+sphinx-rtd-theme>=1.3.0      # Read the Docs theme
+nbsphinx>=0.9.0              # Notebook documentation
+
+# Profiling & Performance
+memory-profiler>=0.61.0      # Memory profiling
+line-profiler>=4.0.3         # Line-by-line profiling
+py-spy>=0.3.14               # Sampling profiler
+
+# Notebook Enhancements
+nbconvert>=7.0.0             # Notebook conversion
+nbformat>=5.9.0              # Notebook format
+papermill>=2.4.0             # Parametrize notebooks
+
+# Git Hooks
+pre-commit>=3.3.3            # Git hooks framework
+
+# Data Validation
+pandera>=0.17.0              # DataFrame validation
+great-expectations>=0.18.0   # Data quality
+
+# Additional Visualization
+graphviz>=0.20.0             # Graph visualization
+networkx>=3.0.0              # Network analysis
+
+# Export Tools
+openpyxl>=3.1.0              # Excel export
+xlsxwriter>=3.1.0            # Excel formatting

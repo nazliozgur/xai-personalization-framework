@@ -1,0 +1,45 @@
+{
+  "knowledge_gaps": [
+    {
+      "feature": "title",
+      "rare_category_count": 172454,
+      "rare_percentage": 85.8656666666667,
+      "severity": "CRITICAL",
+      "nist_issue": "Model lacks knowledge for 85.9% of title",
+      "recommendation": "CRITICAL: Group rare categories + confidence intervals"
+    },
+    {
+      "feature": "text",
+      "rare_category_count": 264600,
+      "rare_percentage": 100.00000000000003,
+      "severity": "CRITICAL",
+      "nist_issue": "Model lacks knowledge for 100.0% of text",
+      "recommendation": "CRITICAL: Group rare categories + confidence intervals"
+    },
+    {
+      "feature": "asin",
+      "rare_category_count": 100102,
+      "rare_percentage": 90.48566666666669,
+      "severity": "CRITICAL",
+      "nist_issue": "Model lacks knowledge for 90.5% of asin",
+      "recommendation": "CRITICAL: Group rare categories + confidence intervals"
+    },
+    {
+      "feature": "parent_asin",
+      "rare_category_count": 98321,
+      "rare_percentage": 83.07866666666669,
+      "severity": "CRITICAL",
+      "nist_issue": "Model lacks knowledge for 83.1% of parent_asin",
+      "recommendation": "CRITICAL: Group rare categories + confidence intervals"
+    },
+    {
+      "feature": "user_id",
+      "rare_category_count": 243599,
+      "rare_percentage": 100.00000000000004,
+      "severity": "CRITICAL",
+      "nist_issue": "Model lacks knowledge for 100.0% of user_id",
+      "recommendation": "CRITICAL: Group rare categories + confidence intervals"
+    }
+  ],
+  "total_gaps": 5
+}

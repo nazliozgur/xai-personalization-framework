@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-18T15:36:11.813190",
+    "analyst": "Nazl\u0131 \u00d6zg\u00fcr",
+    "framework": "McKinsey + PMI Risk Management",
+    "version": "XAE-Frame v3.6"
+  },
+  "overall_assessment": {
+    "total_score": 88.0,
+    "decision": "\ud83d\udfe1 CONDITIONAL GO",
+    "rationale": "Acceptable score (88.0/100) but 1 areas need mitigation",
+    "timeline": "Proceed with risk mitigation plan"
+  },
+  "traffic_light_summary": {
+    "green_count": 4,
+    "yellow_count": 1,
+    "red_count": 1
+  },
+  "risk_categories": {
+    "data_quality": {
+      "category": "Data Quality & Trustworthiness",
+      "status": "green",
+      "score": 100,
+      "weight": 0.25,
+      "weighted_score": 25.0,
+      "metric_value": "99.84533333333333",
+      "source": "Section 3"
+    },
+    "fairness": {
+      "category": "Fairness & Ethical Concerns",
+      "status": "green",
+      "score": 100,
+      "weight": 0.2,
+      "weighted_score": 20.0,
+      "metric_value": "0",
+      "source": "Section 7-8"
+    },
+    "leakage": {
+      "category": "Data Leakage & Validity",
+      "status": "green",
+      "score": 100,
+      "weight": 0.2,
+      "weighted_score": 20.0,
+      "metric_value": "0",
+      "source": "Section 6, 9, 10"
+    },
+    "temporal_stability": {
+      "category": "Temporal Stability & Drift",
+      "status": "green",
+      "score": 100,
+      "weight": 0.15,
+      "weighted_score": 15.0,
+      "metric_value": "0.05",
+      "source": "Section 11, 12, 13"
+    },
+    "interpretability": {
+      "category": "Explainability & Interpretability",
+      "status": "red",
+      "score": 20,
+      "weight": 0.1,
+      "weighted_score": 2.0,
+      "metric_value": "25.0",
+      "source": "Section 5, 7, 9"
+    },
+    "business_value": {
+      "category": "Business Value & Impact",
+      "status": "yellow",
+      "score": 60,
+      "weight": 0.1,
+      "weighted_score": 6.0,
+      "metric_value": "1",
+      "source": "Section 14"
+    }
+  },
+  "critical_blockers": [],
+  "mitigation_strategies": [
+    {
+      "category": "Explainability & Interpretability",
+      "status": "red",
+      "priority": "P0 (Blocker)",
+      "strategies": [
+        "Apply cardinality mitigation (Section 3.4)",
+        "Group rare categories (Pareto 80/20)",
+        "Use SHAP TreeExplainer for speed"
+      ]
+    },
+    {
+      "category": "Business Value & Impact",
+      "status": "yellow",
+      "priority": "P1 (High)",
+      "strategies": [
+        "Re-evaluate feature engineering priorities",
+        "Consult stakeholders on KPI alignment",
+        "Consider domain expert feature suggestions"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Overall risk score: 88.0/100",
+    "Decision: \ud83d\udfe1 CONDITIONAL GO",
+    "Timeline: Proceed with risk mitigation plan",
+    "Priority actions: 1 blockers"
+  ]
+}

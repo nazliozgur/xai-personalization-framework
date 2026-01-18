@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-01-18T15:36:05.464821",
+  "pairs_analyzed": 1,
+  "biased_pairs": 1,
+  "results": [
+    {
+      "proxy": "helpful_vote",
+      "sensitive_attribute": "verified_purchase",
+      "correlation": -0.02961969200137152,
+      "demographic_parity_ratio": 0.5924266290376623,
+      "bias_detected": true,
+      "risk_level": "CRITICAL"
+    }
+  ]
+}

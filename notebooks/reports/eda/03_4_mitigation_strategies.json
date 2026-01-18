@@ -1,0 +1,132 @@
+[
+  {
+    "feature": "text",
+    "strategies": [
+      {
+        "strategy": "Frequency-based grouping",
+        "description": "Keep top 52920 categories, group rest as \"Other\"",
+        "expected_reduction": "264600 \u2192 52921 categories",
+        "pros": "Preserves ~80% of data (Pareto principle)",
+        "cons": "Loses granularity for rare items"
+      },
+      {
+        "strategy": "Embedding layers",
+        "description": "Learn 22-dimensional embeddings",
+        "expected_reduction": "264600 categories \u2192 22 dimensions",
+        "pros": "Preserves semantic similarity",
+        "cons": "Less interpretable than categories"
+      },
+      {
+        "strategy": "Target encoding",
+        "description": "Replace categories with mean target value",
+        "expected_reduction": "264600 categories \u2192 1 continuous feature",
+        "pros": "Single feature, captures relationship",
+        "cons": "Risk of overfitting, needs regularization"
+      }
+    ]
+  },
+  {
+    "feature": "user_id",
+    "strategies": [
+      {
+        "strategy": "Frequency-based grouping",
+        "description": "Keep top 48719 categories, group rest as \"Other\"",
+        "expected_reduction": "243599 \u2192 48720 categories",
+        "pros": "Preserves ~80% of data (Pareto principle)",
+        "cons": "Loses granularity for rare items"
+      },
+      {
+        "strategy": "Embedding layers",
+        "description": "Learn 22-dimensional embeddings",
+        "expected_reduction": "243599 categories \u2192 22 dimensions",
+        "pros": "Preserves semantic similarity",
+        "cons": "Less interpretable than categories"
+      },
+      {
+        "strategy": "Target encoding",
+        "description": "Replace categories with mean target value",
+        "expected_reduction": "243599 categories \u2192 1 continuous feature",
+        "pros": "Single feature, captures relationship",
+        "cons": "Risk of overfitting, needs regularization"
+      }
+    ]
+  },
+  {
+    "feature": "title",
+    "strategies": [
+      {
+        "strategy": "Frequency-based grouping",
+        "description": "Keep top 34491 categories, group rest as \"Other\"",
+        "expected_reduction": "172456 \u2192 34492 categories",
+        "pros": "Preserves ~80% of data (Pareto principle)",
+        "cons": "Loses granularity for rare items"
+      },
+      {
+        "strategy": "Embedding layers",
+        "description": "Learn 20-dimensional embeddings",
+        "expected_reduction": "172456 categories \u2192 20 dimensions",
+        "pros": "Preserves semantic similarity",
+        "cons": "Less interpretable than categories"
+      },
+      {
+        "strategy": "Target encoding",
+        "description": "Replace categories with mean target value",
+        "expected_reduction": "172456 categories \u2192 1 continuous feature",
+        "pros": "Single feature, captures relationship",
+        "cons": "Risk of overfitting, needs regularization"
+      }
+    ]
+  },
+  {
+    "feature": "asin",
+    "strategies": [
+      {
+        "strategy": "Frequency-based grouping",
+        "description": "Keep top 20020 categories, group rest as \"Other\"",
+        "expected_reduction": "100104 \u2192 20021 categories",
+        "pros": "Preserves ~80% of data (Pareto principle)",
+        "cons": "Loses granularity for rare items"
+      },
+      {
+        "strategy": "Embedding layers",
+        "description": "Learn 17-dimensional embeddings",
+        "expected_reduction": "100104 categories \u2192 17 dimensions",
+        "pros": "Preserves semantic similarity",
+        "cons": "Less interpretable than categories"
+      },
+      {
+        "strategy": "Target encoding",
+        "description": "Replace categories with mean target value",
+        "expected_reduction": "100104 categories \u2192 1 continuous feature",
+        "pros": "Single feature, captures relationship",
+        "cons": "Risk of overfitting, needs regularization"
+      }
+    ]
+  },
+  {
+    "feature": "parent_asin",
+    "strategies": [
+      {
+        "strategy": "Frequency-based grouping",
+        "description": "Keep top 19665 categories, group rest as \"Other\"",
+        "expected_reduction": "98327 \u2192 19666 categories",
+        "pros": "Preserves ~80% of data (Pareto principle)",
+        "cons": "Loses granularity for rare items"
+      },
+      {
+        "strategy": "Embedding layers",
+        "description": "Learn 17-dimensional embeddings",
+        "expected_reduction": "98327 categories \u2192 17 dimensions",
+        "pros": "Preserves semantic similarity",
+        "cons": "Less interpretable than categories"
+      },
+      {
+        "strategy": "Target encoding",
+        "description": "Replace categories with mean target value",
+        "expected_reduction": "98327 categories \u2192 1 continuous feature",
+        "pros": "Single feature, captures relationship",
+        "cons": "Risk of overfitting, needs regularization"
+      }
+    ]
+  }
+]

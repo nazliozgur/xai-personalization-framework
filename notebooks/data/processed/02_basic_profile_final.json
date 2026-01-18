@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-01-18T15:35:42.230354",
+  "multi_domain": true,
+  "domains": [
+    "All_Beauty",
+    "Gift_Cards",
+    "Digital_Music"
+  ],
+  "dataset": {
+    "rows": 1,
+    "columns": 11,
+    "memory_mb": 203.69143199920654,
+    "avg_bytes_per_row": 213585947.0
+  },
+  "column_types": {
+    "numerical": [
+      "rating",
+      "helpful_vote"
+    ],
+    "categorical": [
+      "title",
+      "text",
+      "images",
+      "asin",
+      "parent_asin",
+      "user_id",
+      "domain"
+    ],
+    "datetime": [
+      "timestamp"
+    ]
+  },
+  "cardinality": {
+    "user_count": 243599,
+    "item_count": 100104
+  },
+  "date_range": {
+    "min": "1998-04-24 20:48:17",
+    "max": "2023-09-06 21:27:21.743000",
+    "span_days": 9266
+  },
+  "domain_statistics": {
+    "All_Beauty": {
+      "rows": 100000,
+      "percentage": 10000000.0,
+      "memory_mb": 73.68851089477539,
+      "user_count": 81806,
+      "item_count": 40697,
+      "avg_rating": 4.06085,
+      "verified_pct": 87.78399999999999,
+      "date_range": {
+        "min": "2001-03-05 07:27:57",
+        "max": "2023-03-25 17:58:59.374000"
+      }
+    },
+    "Gift_Cards": {
+      "rows": 100000,
+      "percentage": 10000000.0,
+      "memory_mb": 55.304993629455566,
+      "user_count": 90340,
+      "item_count": 1731,
+      "avg_rating": 4.55479,
+      "verified_pct": 93.233,
+      "date_range": {
+        "min": "2008-08-06 01:28:26",
+        "max": "2023-09-06 21:27:21.743000"
+      }
+    },
+    "Digital_Music": {
+      "rows": 100000,
+      "percentage": 10000000.0,
+      "memory_mb": 89.45823669433594,
+      "user_count": 75079,
+      "item_count": 57676,
+      "avg_rating": 4.5416,
+      "verified_pct": 74.14500000000001,
+      "date_range": {
+        "min": "1998-04-24 20:48:17",
+        "max": "2023-06-01 04:01:26.903000"
+      }
+    }
+  },
+  "loading_summary": [
+    {
+      "domain": "All_Beauty",
+      "rows": 100000,
+      "columns": 11,
+      "memory_mb": 68.32473087310791,
+      "min_date": "2001-03-05 07:27:57",
+      "max_date": "2023-03-25 17:58:59.374000",
+      "year_span": "22",
+      "status": "SUCCESS"
+    },
+    {
+      "domain": "Gift_Cards",
+      "rows": 100000,
+      "columns": 11,
+      "memory_mb": 52.88027572631836,
+      "min_date": "2008-08-06 01:28:26",
+      "max_date": "2023-09-06 21:27:21.743000",
+      "year_span": "15",
+      "status": "SUCCESS"
+    },
+    {
+      "domain": "Digital_Music",
+      "rows": 100000,
+      "columns": 11,
+      "memory_mb": 82.48642539978027,
+      "min_date": "1998-04-24 20:48:17",
+      "max_date": "2023-06-01 04:01:26.903000",
+      "year_span": "25",
+      "status": "SUCCESS"
+    }
+  ]
+}

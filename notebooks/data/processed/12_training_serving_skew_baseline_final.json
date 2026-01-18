@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-01-18T15:36:08.066936",
+  "feature_availability": [
+    {
+      "feature": "rating",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "title",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "text",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "images",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "asin",
+      "real_time_available": "Yes",
+      "latency_ms": "<10ms",
+      "freshness_requirement": "Static"
+    },
+    {
+      "feature": "parent_asin",
+      "real_time_available": "Yes",
+      "latency_ms": "<10ms",
+      "freshness_requirement": "Static"
+    },
+    {
+      "feature": "user_id",
+      "real_time_available": "Yes",
+      "latency_ms": "<10ms",
+      "freshness_requirement": "Static"
+    },
+    {
+      "feature": "timestamp",
+      "real_time_available": "Yes",
+      "latency_ms": "<10ms",
+      "freshness_requirement": "Real-time"
+    },
+    {
+      "feature": "helpful_vote",
+      "real_time_available": "Maybe",
+      "latency_ms": "100-500ms",
+      "freshness_requirement": "Hourly/Daily"
+    },
+    {
+      "feature": "verified_purchase",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "domain",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    },
+    {
+      "feature": "year_month",
+      "real_time_available": "Review Needed",
+      "latency_ms": "Unknown",
+      "freshness_requirement": "Unknown"
+    }
+  ],
+  "lag_suspects": [],
+  "next_steps": [
+    "Validate in production environment",
+    "Set up monitoring for training-serving skew",
+    "Document feature computation logic",
+    "Implement feature store"
+  ]
+}
